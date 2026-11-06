@@ -1,211 +1,99 @@
-let allItems = [];
-let allTags = [];
-let activeTags = new Set();
+/* Category catalog: case-insensitive vendor search + multi-select tag filters. */
+(function () {
+  'use strict';
+  const { $, el, SECTION_META, vendorsFor, loadData, mountGrid, emptyState, setActiveSection } = window.Adistec;
+  const typeParam = new URLSearchParams(location.search).get('type') || 'security';
+  const type = Object.prototype.hasOwnProperty.call(SECTION_META, typeParam) ? typeParam : 'security';
+  const meta = SECTION_META[type];
+  let items = [];
+  let activeTags = new Set();
+  let allTags = [];
+  let tagsExpanded = false;
+  let tagQuery = '';
+  let vendorQuery = '';
+  const MAX_TAGS = 18;
 
-const MAX_VISIBLE_TAGS = 20;
-let tagsExpanded = false;
-let tagSearchTerm = "";
+  document.title = meta.label + ' | Portfólio Adistec Brasil';
+  $('#page-title').textContent = meta.title;
+  $('#page-description').textContent = meta.description;
+  $('#section-title').textContent = 'Fabricantes de ' + meta.label;
+  $('#section-description').textContent = 'Encontre fabricantes, compare especialidades e descubra suas soluções.';
+  $('#breadcrumb-section').textContent = meta.label;
+  $('#section-number').textContent = meta.number;
+  $('#section-watermark').textContent = meta.number;
+  setActiveSection(type);
 
-// ============================
-// CONTEXTO DA SEÇÃO
-// ============================
-
-const params = new URLSearchParams(window.location.search);
-const currentSection = params.get("type") || "security";
-
-const sectionContent = {
-  security: {
-    title: "Security Portfolio",
-    description: "Fabricantes líderes em proteção de dados, identidades, aplicações e infraestrutura."
-  },
-  alliances: {
-    title: "Alliances Portfolio",
-    description: "Parcerias estratégicas do ecossistema Adistec e fabricantes complementares."
-  },
-  datacenter: {
-    title: "Data Center Portfolio",
-    description: "Infraestrutura corporativa, servidores, storage e soluções HCI."
+  function normalize(value) {
+    return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR').trim();
   }
-};
-
-if (sectionContent[currentSection]) {
-  document.getElementById("page-title").innerText = sectionContent[currentSection].title;
-  document.getElementById("page-description").innerText = sectionContent[currentSection].description;
-  document.getElementById("section-title").innerText = sectionContent[currentSection].title;
-  document.getElementById("section-description").innerText = sectionContent[currentSection].description;
-  document.title = sectionContent[currentSection].title + " | Adistec Brasil";
-}
-
-// ============================
-// LOAD JSON
-// ============================
-
-fetch("assets/JSON/vendors.json")
-  .then(res => res.json())
-  .then(data => {
-    if (!data[currentSection]) return;
-    allItems = data[currentSection];
-    renderTags(allItems);
-    renderGrid(allItems);
-  })
-  .catch(err => console.error("Erro JSON:", err));
-
-// ============================
-// TAG SEARCH
-// ============================
-
-function handleTagSearch(value) {
-  // atualiza o estado global da busca de tags
-  tagSearchTerm = (value || "").toLowerCase().trim();
-
-  // Se a busca estiver vazia, resetamos o estado visual
-  if (tagSearchTerm === "") {
-    tagsExpanded = false;
-    renderTags(allItems);
-    return;
+  function updateReset() {
+    $('#reset-filters').hidden = !vendorQuery && !tagQuery && activeTags.size === 0;
   }
-
-  // Quando o usuário busca, expandimos para mostrar resultados relevantes
-  tagsExpanded = true;
-
-  // Renderiza usando todos os itens — renderTags vai filtrar as tags pelo tagSearchTerm
-  renderTags(allItems);
-}
-
-// ============================
-// RENDER TAGS
-// ============================
-
-function renderTags(items) {
-
-  const tagContainer = document.getElementById("tag-filters");
-  const tagsSet = new Set();
-
-  items.forEach(item => {
-    if (item.tags) item.tags.forEach(tag => tagsSet.add(tag));
-  });
-
-  allTags = Array.from(tagsSet).sort();
-
-  let filteredTags = allTags.filter(tag =>
-    tag.toLowerCase().includes(tagSearchTerm)
-  );
-
-  const visibleTags = tagsExpanded
-    ? filteredTags
-    : filteredTags.slice(0, MAX_VISIBLE_TAGS);
-
-  let html = `
-    <button
-      id="btn-all"
-      class="btn btn-outline-primary me-2 mb-2 ${activeTags.size === 0 ? "active" : ""}"
-      onclick="clearAllTags()">
-      Todos
-    </button>
-  `;
-
-  visibleTags.forEach(tag => {
-    html += `
-      <button
-        class="btn btn-outline-primary me-2 mb-2 ${activeTags.has(tag) ? "active" : ""}"
-        onclick="toggleTag('${tag}')">
-        ${tag}
-      </button>
-    `;
-  });
-
-  if (filteredTags.length > MAX_VISIBLE_TAGS && tagSearchTerm === "") {
-    html += `
-      <button
-        class="tag-toggle-btn ms-2"
-        onclick="toggleTagsView()">
-        ${tagsExpanded ? "▲ Ver menos tags" : "▼ Ver mais tags"}
-      </button>
-    `;
+  function filterItems() {
+    const result = items.filter(item => {
+      const matchesQuery = !vendorQuery || [item.name, item.summary, item.description, item.tagline, ...(Array.isArray(item.tags)?item.tags:[]), ...(Array.isArray(item.products)?item.products.flatMap(p => [p.title, p.description]):[])].some(field => normalize(field).includes(vendorQuery));
+      const matchesTag = !activeTags.size || (Array.isArray(item.tags) && item.tags.some(tag => activeTags.has(tag)));
+      return matchesQuery && matchesTag;
+    });
+    const grid = $('#security-grid');
+    if (items.length && !result.length) {
+      grid.replaceChildren();
+      const col=el('div','col-12');
+      const state = emptyState('Nenhum fabricante encontrado','Tente outra pesquisa ou remova alguns filtros.');
+      const clear=el('button','tag-toggle-btn','Limpar filtros ×'); clear.type='button';clear.style.marginTop='14px';clear.addEventListener('click',clearFilters);
+      state.lastElementChild.appendChild(clear);col.appendChild(state);grid.appendChild(col);
+    } else mountGrid(grid,result,type,false);
+    $('#results-count').textContent = result.length + (result.length===1?' fabricante':' fabricantes');
+    updateReset();
   }
-
-  tagContainer.innerHTML = html;
-}
-
-// ============================
-// TAG CONTROLS
-// ============================
-
-function toggleTagsView() {
-  tagsExpanded = !tagsExpanded;
-  renderTags(allItems);
-}
-
-function toggleTag(tag) {
-
-  if (activeTags.has(tag)) {
-    activeTags.delete(tag);
-  } else {
-    activeTags.add(tag);
+  function makeButton(label, active, onClick, extraClass) {
+    const button=el('button','tag-chip' + (active?' active':'') + (extraClass?' '+extraClass:''),label);
+    button.type='button';button.setAttribute('aria-pressed',String(active));button.addEventListener('click',onClick);return button;
   }
-
-  if (activeTags.size === 0) {
-    clearAllTags();
-    return;
+  function renderTags() {
+    const container=$('#tag-filters'); container.replaceChildren();
+    const shown=allTags.filter(tag=>normalize(tag).includes(tagQuery));
+    $('#tag-count').textContent = allTags.length ? allTags.length + ' disponíveis' : '';
+    container.appendChild(makeButton('Todas',activeTags.size===0,clearTags));
+    const visible=tagsExpanded||tagQuery ? shown:shown.slice(0,MAX_TAGS);
+    visible.forEach(tag => container.appendChild(makeButton(tag,activeTags.has(tag),()=>toggleTag(tag))));
+    if (!shown.length && tagQuery) container.appendChild(el('p','tag-filter-empty','Nenhuma palavra-chave corresponde à busca.'));
+    if (shown.length>MAX_TAGS && !tagQuery) {
+      const btn=el('button','tag-toggle-btn',tagsExpanded?'− Ver menos tags':'+ Ver todas as tags ('+shown.length+')');
+      btn.type='button';btn.setAttribute('aria-expanded',String(tagsExpanded));
+      btn.addEventListener('click',()=>{tagsExpanded=!tagsExpanded;renderTags();});container.appendChild(btn);
+    }
+    updateReset();
   }
-
-  applyFilters();
-  renderTags(allItems);
-}
-
-function clearAllTags() {
-  activeTags.clear();
-  tagSearchTerm = "";
-  tagsExpanded = false;
-  document.getElementById("tag-search").value = "";
-  renderGrid(allItems);
-  renderTags(allItems);
-}
-
-// ============================
-// FILTER LOGIC
-// ============================
-
-function applyFilters() {
-
-  const filtered = allItems.filter(item =>
-    item.tags &&
-    item.tags.some(tag => activeTags.has(tag))
-  );
-
-  renderGrid(filtered);
-}
-
-// ============================
-// RENDER GRID
-// ============================
-
-function renderGrid(items) {
-
-  const grid = document.getElementById("security-grid");
-  grid.innerHTML = "";
-
-  items.forEach(item => {
-
-    const tagsHTML = item.tags
-      ? item.tags.map(tag =>
-          `<span class="badge bg-secondary me-1">${tag}</span>`
-        ).join("")
-      : "";
-
-    grid.innerHTML += `
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <a href="${item.link}" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <img src="${item.logo}" class="img-fluid mb-3" style="max-height:60px">
-              <div class="mb-2">${tagsHTML}</div>
-              <h5 class="fw-bold">${item.name}</h5>
-              <p class="small text-muted">${item.description}</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    `;
-  });
-}
+  function toggleTag(tag) {
+    if (activeTags.has(tag)) activeTags.delete(tag); else activeTags.add(tag);
+    renderTags(); filterItems();
+  }
+  function clearTags() { activeTags.clear();tagQuery='';tagsExpanded=false;$('#tag-search').value='';renderTags();filterItems(); }
+  function clearFilters() {
+    activeTags.clear(); tagsExpanded=false;tagQuery='';vendorQuery='';
+    $('#vendor-search').value='';$('#tag-search').value='';renderTags();filterItems();
+  }
+  $('#reset-filters').addEventListener('click',clearFilters);
+  $('#vendor-search').addEventListener('input',event=>{vendorQuery=normalize(event.target.value);filterItems();});
+  $('#tag-search').addEventListener('input',event=>{tagQuery=normalize(event.target.value);renderTags();});
+  async function init() {
+    try {
+      const data=await loadData();
+      items=vendorsFor(data,type);
+      allTags=[...new Set(items.flatMap(v=>Array.isArray(v.tags)?v.tags.filter(tag=>typeof tag==='string'&&tag.trim()):[]))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
+      const label=items.length+(items.length===1?' fabricante':' fabricantes');
+      $('#hero-vendor-count').textContent=label+' no catálogo';
+      $('#catalog-total').textContent=label;
+      renderTags();filterItems();
+    } catch (error) {
+      console.error('Erro no catálogo:',error);
+      $('#hero-vendor-count').textContent='Catálogo indisponível';
+      $('#catalog-total').textContent='Indisponível';
+      $('#results-count').textContent='Catálogo indisponível';
+      $('#security-grid').replaceChildren();
+      const col=el('div','col-12');col.appendChild(emptyState('Erro ao carregar o catálogo','Abra o site através de um servidor HTTP local e tente novamente.'));$('#security-grid').appendChild(col);
+    }
+  }
+  init();
+}());

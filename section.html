@@ -1,78 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Security | Adistec Brasil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b36">
+  <meta name="description" content="Explore fabricantes por especialidade e área de atuação no portfólio Adistec Brasil.">
+  <title>Áreas de atuação | Adistec Brasil</title>
+  <link rel="icon" href="./assets/IMG/icons/favicon.svg" type="image/svg+xml">
   <link href="./assets/CSS/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/CSS/all.css" rel="stylesheet">
-  <link rel="icon" href="assets/IMG/icons/favcon.jpg">
+  <script src="./assets/JS/common.js" defer></script>
+  <script src="./assets/JS/section.js" defer></script>
+  <script src="./assets/JS/bootstrap.bundle.min.js" defer></script>
 </head>
-<body class="bg-light">
-
-<!-- NAVBAR -->
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-    <div class="container">
-
-      <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
-        <img src="./assets/IMG/logos/logow.png" height="36">
-        <img src="./assets/IMG/icons/brasil.webp" height="22">
-      </a>
-
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto gap-3">
-          <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="section.html?type=security">Segurança</a></li>
-          <li class="nav-item"><a class="nav-link" href="section.html?type=alliances">Alliances</a></li>
-          <li class="nav-item"><a class="nav-link" href="section.html?type=datacenter">Data Center</a></li>
-        </ul>
+<body data-page="section">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header"><nav class="navbar navbar-expand-lg navbar-dark main-nav" aria-label="Navegação principal"><div class="container nav-container">
+    <a class="navbar-brand brand-lockup" href="./index.html" aria-label="Adistec Brasil - início"><img class="brand-logo" src="./assets/IMG/logos/logow.png" alt="Adistec"><span class="brand-divider" aria-hidden="true"></span><span class="brand-region"><img src="./assets/IMG/icons/brasil.webp" alt=""><span>BRASIL</span></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto align-items-lg-center nav-links"><li class="nav-item"><a class="nav-link" href="./index.html">Início</a></li><li class="nav-item"><a class="nav-link" data-section-link="security" href="./section.html?type=security">Segurança</a></li><li class="nav-item"><a class="nav-link" data-section-link="alliances" href="./section.html?type=alliances">Alliances</a></li><li class="nav-item"><a class="nav-link" data-section-link="datacenter" href="./section.html?type=datacenter">Data Center</a></li><li class="nav-item nav-cta"><a class="btn btn-nav" href="./index.html#categorias">Todas as áreas <span aria-hidden="true">↗</span></a></li></ul></div>
+  </div></nav></header>
+  <main id="conteudo">
+    <section class="hero hero-inner hero-section"><div class="hero-grid-overlay" aria-hidden="true"></div><div class="container hero-inner-container"><nav aria-label="Trilha de navegação" class="breadcrumbs"><a href="./index.html">Início</a><span aria-hidden="true">/</span><span id="breadcrumb-section">Portfólio</span></nav><div class="row align-items-center"><div class="col-lg-9"><div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> EXPLORAR SOLUÇÕES / <span id="section-number">01</span></div><h1 id="page-title">Portfólio de soluções</h1><p id="page-description" class="hero-lead">Conheça fabricantes e encontre as tecnologias para seu desafio.</p><div class="hero-meta"><span class="hero-meta-dot"></span><span id="hero-vendor-count">Carregando fabricantes…</span></div></div></div><div class="hero-section-mark" aria-hidden="true" id="section-watermark">01</div></div></section>
+    <section class="catalog-section section-space"><div class="container">
+      <div class="section-heading catalog-title"><div><span class="section-kicker">DESCUBRA O PORTFÓLIO</span><h2 id="section-title">Fabricantes e soluções</h2><p id="section-description">Encontre a tecnologia certa.</p></div><span class="catalog-total" id="catalog-total">— fabricantes</span></div>
+      <div class="filter-panel"><div class="filter-panel-top"><div class="filter-heading"><span class="filter-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16M7 12h10M10 17h4"/></svg></span><div><strong>Encontre o que procura</strong><span>Pesquise fabricantes ou explore por especialidade</span></div></div><button type="button" class="clear-filters" id="reset-filters" hidden>Limpar filtros <span aria-hidden="true">×</span></button></div>
+        <div class="row g-3"><div class="col-lg-6"><label for="vendor-search" class="input-label">FABRICANTE OU SOLUÇÃO</label><div class="search-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg><input id="vendor-search" class="form-control catalog-search" type="search" placeholder="Ex.: Forcepoint, proteção de dados…" autocomplete="off"></div></div><div class="col-lg-6"><label for="tag-search" class="input-label">BUSCAR PALAVRA-CHAVE</label><div class="search-input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg><input id="tag-search" class="form-control catalog-search" type="search" placeholder="Ex.: DLP, Cloud Security…" autocomplete="off"></div></div></div>
+        <div class="filter-divider"></div><div class="filter-tags-label">FILTRAR POR TECNOLOGIA <span id="tag-count" class="tag-count"></span></div><div id="tag-filters" class="tag-filters" role="group" aria-label="Filtros por tecnologia"></div>
       </div>
-      
-    </div>
-  </nav>
-</header>
-
-<!-- HERO -->
-<section class="py-5 bg-primary text-white text-center">
-  <div class="container">
-    <h1 id="page-title" class="fw-bold"></h1>
-    <p id="page-description" class="lead mt-3" style="color: white"></p>
-  </div>
-</section>
-
-<!-- SECURITY GRID -->
-<section class="py-5">
-  <div class="container">
-    <h2 id="section-title" class="fw-bold mb-2"></h2>
-    <p id="section-description" class="text-muted mb-4"></p>
-    <input
-      type="text"
-      id="tag-search"
-      class="form-control mb-3"
-      placeholder="Buscar tags..."
-      oninput="handleTagSearch(this.value)"
-    />
-    <!-- TAG FILTER -->
-    <div class="mb-4" id="tag-filters"></div>
-    <!-- GRID -->
-    <div class="row g-4" id="security-grid"></div>
-  </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3">
-  © 2026 Adistec Brasil · Portfolio
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="./assets/JS/bootstrap.bundle.min.js"></script>
-<script src="assets/JS/section.js"></script>
-
+      <div class="catalog-results"><div><span class="results-graphic" aria-hidden="true"></span><strong id="results-count">Carregando…</strong><span class="results-subtitle"> no catálogo</span></div><span class="results-hint">Selecione um fabricante para ver os detalhes <span aria-hidden="true">↗</span></span></div>
+      <div class="row g-4 vendor-grid" id="security-grid" aria-live="polite"><div class="col-12"><div class="loading-state">Carregando fabricantes…</div></div></div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><img src="./assets/IMG/logos/logow.png" alt="Adistec"><span>Portfólio de soluções · Brasil</span></div><div class="footer-right"><span>© <span data-current-year>2026</span> Adistec Brasil</span><span class="footer-separator">•</span><a href="#conteudo">Voltar ao topo ↑</a></div></div></footer>
 </body>
 </html>

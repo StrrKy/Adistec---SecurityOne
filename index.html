@@ -1,115 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Adistec Brasil | Suporte de Portfolio</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b36">
+  <meta name="description" content="Explore o portfólio de fabricantes, tecnologias e soluções da Adistec Brasil por área de atuação.">
+  <title>Portfólio de Tecnologia | Adistec Brasil</title>
+  <link rel="icon" href="./assets/IMG/icons/favicon.svg" type="image/svg+xml">
   <link href="./assets/CSS/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/CSS/all.css" rel="stylesheet">
-  <link rel="icon" href="./assets/IMG/icons/favcon.jpg">
+  <script src="./assets/JS/common.js" defer></script>
+  <script src="./assets/JS/app.js" defer></script>
+  <script src="./assets/JS/bootstrap.bundle.min.js" defer></script>
 </head>
-<body class="bg-light">
-
-<!-- NAVBAR -->
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-    <div class="container">
-
-      <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
-        <img src="./assets/IMG/logos/logow.png" height="36">
-        <img src="./assets/IMG/icons/brasil.webp" height="22">
-      </a>
-
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto gap-3">
-          <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="section.html?type=security">Segurança</a></li>
-          <li class="nav-item"><a class="nav-link" href="section.html?type=alliances">Alliances</a></li>
-          <li class="nav-item"><a class="nav-link" href="section.html?type=datacenter">Data Center</a></li>
-        </ul>
+<body data-page="home">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark main-nav" aria-label="Navegação principal">
+      <div class="container nav-container">
+        <a class="navbar-brand brand-lockup" href="./index.html" aria-label="Adistec Brasil - início">
+          <img class="brand-logo" src="./assets/IMG/logos/logow.png" alt="Adistec">
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-region"><img src="./assets/IMG/icons/brasil.webp" alt=""><span>BRASIL</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center nav-links">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="./section.html?type=security">Segurança</a></li>
+            <li class="nav-item"><a class="nav-link" href="./section.html?type=alliances">Alliances</a></li>
+            <li class="nav-item"><a class="nav-link" href="./section.html?type=datacenter">Data Center</a></li>
+            <li class="nav-item nav-cta"><a class="btn btn-nav" href="#categorias">Explorar portfólio <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
       </div>
-      
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section class="py-5 bg-primary text-white text-center">
-  <div class="container">
-    <h1 class="fw-bold">Adistec Brasil - Suporte de Portfolio</h1>
-    <p class="lead mt-3" style="color: white">
-      Conheça o portfólio de fabricantes globais representados pela Adistec Brasil,
-      organizados por áreas de atuação.
-    </p>
-  </div>
-</section>
+  <main id="conteudo">
+    <section class="hero hero-home" aria-labelledby="home-heading">
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="container hero-container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 hero-copy">
+            <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> ADISTEC BRASIL <span class="eyebrow-sep">/</span> PORTFÓLIO DE SOLUÇÕES</div>
+            <h1 id="home-heading">A tecnologia certa.<br><span>O próximo passo começa aqui.</span></h1>
+            <p class="hero-lead">Um universo de fabricantes e especialidades, organizado para você explorar soluções, identificar oportunidades e conectar desafios à tecnologia.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-hero" href="./section.html?type=security">Explorar soluções <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-ghost-light" href="#categorias">Conhecer as áreas <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-note"><span class="note-line"></span> CONHECIMENTO PARA DECISÕES MAIS INTELIGENTES</div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-visual" aria-label="Painel de visão geral do portfólio">
+              <div class="hero-visual-glow" aria-hidden="true"></div>
+              <div class="visual-orbit orbit-one" aria-hidden="true"></div><div class="visual-orbit orbit-two" aria-hidden="true"></div>
+              <div class="visual-top"><span class="visual-label">ADISTEC / PORTFOLIO HUB</span><span class="visual-live"><span></span> ONLINE</span></div>
+              <div class="visual-center"><span class="visual-overline">INTELIGÊNCIA DE PORTFÓLIO</span><strong>Explore.<br>Conecte.<br><em>Evolua.</em></strong><div class="visual-pulse" aria-hidden="true"><span></span><span></span><span></span></div></div>
+              <div class="visual-bottom"><span>SEGURANÇA <b>01</b></span><span>ALLIANCES <b>02</b></span><span>DATA CENTER <b>03</b></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottomline"><span>SEU PONTO DE PARTIDA PARA O ECOSSISTEMA ADISTEC</span><a href="#categorias" aria-label="Ir para as categorias"><span aria-hidden="true">↓</span></a></div>
+      </div>
+    </section>
 
-<!-- ===== SEGURANÇA ===== -->
+    <section class="metrics-section" aria-label="Portfólio em números">
+      <div class="container"><div class="metrics-bar">
+        <div class="metric"><strong id="metric-vendors">—</strong><span>Fabricantes cadastrados</span></div>
+        <div class="metric"><strong>03</strong><span>Áreas de atuação</span></div>
+        <div class="metric"><strong id="metric-tags">—</strong><span>Especialidades mapeadas</span></div>
+        <div class="metric metrics-caption"><span class="metric-sparkle" aria-hidden="true">✦</span><span>Um ecossistema.<br><b>Múltiplas possibilidades.</b></span></div>
+      </div></div>
+    </section>
 
-<section class="py-5">
-  <div class="container">
+    <section id="categorias" class="section-space category-section" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-kicker">01 / ÁREAS DE ATUAÇÃO</span><h2 id="categories-title">Explore nosso <span class="text-blue">ecossistema.</span></h2><p>Três frentes de especialização. Um portfólio pensado para conectar negócios e tecnologia.</p></div><span class="section-decor" aria-hidden="true">01 — 03</span></div>
+        <div class="row g-4">
+          <div class="col-lg-4"><a class="category-card category-security" href="./section.html?type=security"><div class="category-card-top"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><span class="category-index">01 / 03</span></div><div><span class="category-overline">PROTEÇÃO & RESILIÊNCIA</span><h3>Segurança</h3><p>Proteção de dados, identidades, aplicações e ambientes digitais.</p></div><div class="category-bottom"><span id="category-count-security">Ver fabricantes</span><span class="category-arrow" aria-hidden="true">↗</span></div></a></div>
+          <div class="col-lg-4"><a class="category-card category-alliances" href="./section.html?type=alliances"><div class="category-card-top"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="m8 7 3 9m5-9-3 9M8 6h8"/></svg></span><span class="category-index">02 / 03</span></div><div><span class="category-overline">CONEXÕES & PARCERIAS</span><h3>Alliances</h3><p>Alianças estratégicas e tecnologias complementares para novos desafios.</p></div><div class="category-bottom"><span id="category-count-alliances">Explorar área</span><span class="category-arrow" aria-hidden="true">↗</span></div></a></div>
+          <div class="col-lg-4"><a class="category-card category-datacenter" href="./section.html?type=datacenter"><div class="category-card-top"><span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg></span><span class="category-index">03 / 03</span></div><div><span class="category-overline">INFRAESTRUTURA & PERFORMANCE</span><h3>Data Center</h3><p>Infraestrutura corporativa, armazenamento e plataformas de alta disponibilidade.</p></div><div class="category-bottom"><span id="category-count-datacenter">Explorar área</span><span class="category-arrow" aria-hidden="true">↗</span></div></a></div>
+        </div>
+      </div>
+    </section>
 
-    <h2 class="fw-bold mb-2">Segurança</h2>
-    <p class="text-muted mb-4">
-      Fabricantes líderes em proteção de dados, identidades e infraestrutura.
-    </p>
-    <div class="row g-4" id="security-grid"></div>
-    <div class="text-center mt-4">
-      <a href="section.html?type=security" class="btn btn-outline-primary px-4 py-2">
-        Ver todos as soluções de Segurança →
-      </a>
-    </div>
-  </div>
-</section>
+    <section class="section-space featured-section" id="fabricantes" aria-labelledby="featured-title"><div class="container">
+      <div class="section-heading"><div><span class="section-kicker">02 / FABRICANTES EM DESTAQUE</span><h2 id="featured-title">Conheça quem <span class="text-blue">faz acontecer.</span></h2><p>Explore as tecnologias, especialidades e soluções dos fabricantes cadastrados.</p></div><a class="text-link" href="./section.html?type=security">Ver portfólio de Segurança <span aria-hidden="true">↗</span></a></div>
+      <div class="row g-4 vendor-grid" id="security-grid" aria-live="polite"><div class="col-12"><div class="loading-state">Carregando fabricantes…</div></div></div>
+    </div></section>
 
-<!-- ===== ALLIANCES ===== -->
+    <section class="section-space more-section" aria-labelledby="more-title"><div class="container">
+      <div class="section-heading"><div><span class="section-kicker">03 / OUTRAS FRENTES</span><h2 id="more-title">Mais caminhos para <span class="text-blue">evoluir.</span></h2><p>Descubra as demais áreas de especialização do nosso ecossistema.</p></div></div>
+      <div class="row g-4">
+        <div class="col-lg-6"><div class="more-panel"><div class="more-panel-heading"><span class="more-panel-number">02</span><h3>Alliances</h3><a href="./section.html?type=alliances" aria-label="Ver portfólio de Alliances">↗</a></div><div class="row g-3 vendor-grid" id="alliances-grid"></div></div></div>
+        <div class="col-lg-6"><div class="more-panel"><div class="more-panel-heading"><span class="more-panel-number">03</span><h3>Data Center</h3><a href="./section.html?type=datacenter" aria-label="Ver portfólio de Data Center">↗</a></div><div class="row g-3 vendor-grid" id="datacenter-grid"></div></div></div>
+      </div>
+    </div></section>
 
-<section class="py-5 bg-white">
-  <div class="container">
-
-    <h2 class="fw-bold mb-2">Alliances</h2>
-    <p class="text-muted mb-4">
-      Parcerias estratégicas do ecossistema Adistec.
-    </p>
-    <div class="row g-4" id="alliances-grid"></div>
-    <div class="text-center mt-4">
-      <a href="section.html?type=alliances" class="btn btn-outline-primary px-4 py-2">
-        Ver todas as soluções de Alliances →
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== DATA CENTER ===== -->
-
-<section class="py-5">
-  <div class="container">
-
-    <h2 class="fw-bold mb-2">Data Center</h2>
-    <p class="text-muted mb-4">
-      Infraestrutura corporativa e storage.
-    </p>
-    <div class="row g-4" id="datacenter-grid"></div>
-    <div class="text-center mt-4">
-      <a href="section.html?type=datacenter" class="btn btn-outline-primary px-4 py-2">
-        Ver soluções de Data Center →
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-
-<footer class="bg-dark text-white text-center py-3">
-  © 2026 Adistec Brasil · Portfolio
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="./assets/JS/bootstrap.bundle.min.js"></script>
-<script src="./assets/JS/app.js"></script>
+    <section class="closing-band"><div class="container closing-inner"><div><span class="closing-label">CONHECIMENTO QUE CONECTA</span><h2>Encontre a solução.<br>Descubra a oportunidade.</h2></div><a class="btn btn-light closing-button" href="./section.html?type=security">Começar a explorar <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><img src="./assets/IMG/logos/logow.png" alt="Adistec"><span>Portfólio de soluções · Brasil</span></div><div class="footer-right"><span>© <span data-current-year>2026</span> Adistec Brasil</span><span class="footer-separator">•</span><a href="#conteudo">Voltar ao topo ↑</a></div></div></footer>
 </body>
 </html>
