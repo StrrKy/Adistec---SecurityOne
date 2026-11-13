@@ -121,27 +121,27 @@
         {
           "title": "Claroty Continuous Threat Detection (CTD)",
           "description": "Monitoramento e detecção de ameaças em ambientes OT.",
-          "logo": ""
+          "logo": "assets/IMG/logos/claroty.png"
         },
         {
           "title": "Claroty xDome",
           "description": "Plataforma SaaS para gestão de risco, visibilidade e segurança OT/CT/IoT.",
-          "logo": ""
+          "logo": "assets/IMG/logos/claroty.png"
         },
         {
           "title": "Claroty xDome for Healthcare",
           "description": "Plataforma SaaS para gestão de risco, visibilidade e segurança OT/CT/IoT com enfase em Eficiencia Operacional.",
-          "logo": ""
+          "logo": "assets/IMG/logos/claroty.png"
         },
         {
           "title": "Claroty xDome Secure Access",
           "description": "Acesso remoto seguro para ambientes industriais.",
-          "logo": ""
+          "logo": "assets/IMG/logos/claroty.png"
         },
         {
           "title": "Claroty Edge",
           "description": "Descoberta e inventário de ativos OT/IoT.",
-          "logo": ""
+          "logo": "assets/IMG/logos/claroty.png"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -195,7 +195,7 @@
     {
       "name": "Citrix",
       "slug": "citrix",
-      "logo": "assets/IMG/logos/citrix-typographic.svg",
+      "logo": "assets/IMG/logos/citrix-official.png",
       "summary": "Acesso seguro a aplicações, infraestrutura de trabalho digital e entrega de aplicações corporativas.",
       "tags": [
         "DaaS",
@@ -215,22 +215,22 @@
         {
           "title": "Citrix DaaS",
           "description": "Entrega de desktops e aplicações virtuais em diferentes ambientes.",
-          "logo": ""
+          "logo": "assets/IMG/logos/citrix-official.png"
         },
         {
           "title": "NetScaler",
           "description": "Entrega, disponibilidade e segurança de aplicações e serviços.",
-          "logo": ""
+          "logo": "assets/IMG/logos/citrix-official.png"
         },
         {
           "title": "Citrix SecurAccess ZTNA",
           "description": "Acesso a aplicações com abordagem Zero Trust.",
-          "logo": ""
+          "logo": "assets/IMG/logos/citrix-official.png"
         },
         {
           "title": "Citrix Endpoint Management",
           "description": "Gerenciamento e políticas para dispositivos e aplicações corporativas.",
-          "logo": ""
+          "logo": "assets/IMG/logos/citrix-official.png"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -532,7 +532,7 @@
     {
       "name": "Exabeam",
       "slug": "exabeam",
-      "logo": "assets/IMG/logos/exabeam-typographic.svg",
+      "logo": "assets/IMG/logos/exabeam-official.svg",
       "summary": "Operações de segurança com SIEM, análise comportamental e investigação e resposta a ameaças.",
       "tags": [
         "SIEM",
@@ -552,22 +552,22 @@
         {
           "title": "New-Scale SIEM",
           "description": "Plataforma SIEM em nuvem para centralizar sinais, identificar e investigar ameaças.",
-          "logo": ""
+          "logo": "assets/IMG/logos/exabeam-official.svg"
         },
         {
           "title": "New-Scale Analytics",
           "description": "Análise e correlação de eventos para apoiar detecção e investigação.",
-          "logo": ""
+          "logo": "assets/IMG/logos/exabeam-official.svg"
         },
         {
           "title": "New-Scale Fusion",
           "description": "Plataforma para operações de segurança com recursos de detecção e resposta.",
-          "logo": ""
+          "logo": "assets/IMG/logos/exabeam-official.svg"
         },
         {
           "title": "LogRhythm SIEM",
           "description": "Solução de SIEM autogerenciada com coleta e análise de telemetria.",
-          "logo": ""
+          "logo": "assets/IMG/logos/exabeam-official.svg"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -834,7 +834,7 @@
     {
       "name": "Fortinet",
       "slug": "fortinet",
-      "logo": "assets/IMG/logos/fortinet-typographic.svg",
+      "logo": "assets/IMG/logos/fortinet-official.svg",
       "summary": "Cibersegurança integrada para redes, endpoints, aplicações, nuvem e operações de segurança.",
       "tags": [
         "NGFW",
@@ -856,22 +856,22 @@
         {
           "title": "FortiGate NGFW",
           "description": "Firewall de próxima geração para controle e proteção de redes.",
-          "logo": ""
+          "logo": "assets/IMG/logos/fortinet-official.svg"
         },
         {
           "title": "FortiSASE",
           "description": "Acesso seguro com controles de segurança entregues pela nuvem.",
-          "logo": ""
+          "logo": "assets/IMG/logos/fortinet-official.svg"
         },
         {
           "title": "FortiEDR/XDR",
           "description": "Detecção, investigação e resposta a ameaças em endpoints.",
-          "logo": ""
+          "logo": "assets/IMG/logos/fortinet-official.svg"
         },
         {
           "title": "FortiAnalyzer",
           "description": "Análise e relatórios de registros de segurança para apoiar operações e conformidade.",
-          "logo": ""
+          "logo": "assets/IMG/logos/fortinet-official.svg"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -2592,7 +2592,7 @@
     {
       "name": "Arista",
       "slug": "arista",
-      "logo": "assets/IMG/logos/arista-typographic.svg",
+      "logo": "assets/IMG/logos/arista-official.png",
       "summary": "Infraestrutura de redes de data center e nuvem com switching de alto desempenho, automação e visibilidade.",
       "tags": [
         "Data Center Networking",
@@ -2612,22 +2612,22 @@
         {
           "title": "Arista EOS",
           "description": "Sistema operacional de rede programável para switches e ambientes de nuvem.",
-          "logo": ""
+          "logo": "assets/IMG/logos/arista-official.png"
         },
         {
           "title": "Arista CloudVision",
           "description": "Plataforma de gestão, automação e telemetria de redes.",
-          "logo": ""
+          "logo": "assets/IMG/logos/arista-official.png"
         },
         {
           "title": "Arista 7800R Series",
           "description": "Plataformas de roteamento e switching de alta capacidade para data centers.",
-          "logo": ""
+          "logo": "assets/IMG/logos/arista-official.png"
         },
         {
           "title": "Arista 7050X Series",
           "description": "Switches para arquiteturas leaf-spine e conectividade de alta velocidade.",
-          "logo": ""
+          "logo": "assets/IMG/logos/arista-official.png"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -3466,7 +3466,7 @@
     {
       "name": "Quantum",
       "slug": "quantum",
-      "logo": "assets/IMG/logos/quantum-typographic.svg",
+      "logo": "assets/IMG/logos/quantum-official.png",
       "summary": "Armazenamento, proteção e arquivamento de dados não estruturados, com foco em desempenho e retenção.",
       "tags": [
         "Object Storage",
@@ -3486,22 +3486,22 @@
         {
           "title": "StorNext",
           "description": "Sistema de arquivos para fluxos de trabalho intensivos em dados.",
-          "logo": ""
+          "logo": "assets/IMG/logos/quantum-official.png"
         },
         {
           "title": "ActiveScale",
           "description": "Plataforma de armazenamento de objetos para dados não estruturados.",
-          "logo": ""
+          "logo": "assets/IMG/logos/quantum-official.png"
         },
         {
           "title": "Scalar Tape Libraries",
           "description": "Bibliotecas de fita para retenção e arquivamento de longo prazo.",
-          "logo": ""
+          "logo": "assets/IMG/logos/quantum-official.png"
         },
         {
           "title": "DXi Backup Appliances",
           "description": "Appliances de armazenamento para backup e recuperação.",
-          "logo": ""
+          "logo": "assets/IMG/logos/quantum-official.png"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -3646,7 +3646,7 @@
     {
       "name": "Supermicro",
       "slug": "supermicro",
-      "logo": "assets/IMG/logos/supermicro-typographic.svg",
+      "logo": "assets/IMG/logos/supermicro-official.png",
       "summary": "Servidores, sistemas para IA e infraestrutura de armazenamento de alto desempenho para data centers.",
       "tags": [
         "Servers",
@@ -3666,22 +3666,22 @@
         {
           "title": "SuperServer",
           "description": "Servidores corporativos para diferentes cargas de trabalho e formatos de implantação.",
-          "logo": ""
+          "logo": "assets/IMG/logos/supermicro-official.png"
         },
         {
           "title": "GPU Systems",
           "description": "Plataformas de servidores com aceleração GPU para inteligência artificial e HPC.",
-          "logo": ""
+          "logo": "assets/IMG/logos/supermicro-official.png"
         },
         {
           "title": "SuperStorage",
           "description": "Servidores de armazenamento escaláveis para ambientes corporativos.",
-          "logo": ""
+          "logo": "assets/IMG/logos/supermicro-official.png"
         },
         {
           "title": "MicroCloud",
           "description": "Arquiteturas de servidores compactos e de alta densidade para data centers.",
-          "logo": ""
+          "logo": "assets/IMG/logos/supermicro-official.png"
         }
       ],
       "productSectionTitle": "Principais Produtos",

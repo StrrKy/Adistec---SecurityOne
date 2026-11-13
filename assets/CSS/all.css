@@ -312,5 +312,7 @@ svg { display: block; }
 .product-media-frame img {max-width:100%; max-height:220px;object-fit:contain;}
 .product-icon {display:flex;align-items:center;justify-content:center;width:48px;height:48px;margin:10px 0 15px;padding:6px;border:1px solid #e4edf7;background:#fff;border-radius:12px;}
 .product-icon img {width:100%;max-height:100%;object-fit:contain;}
+.product-icon--brand {width:132px;max-width:100%;height:54px;padding:8px 11px;}
+.product-icon--brand img {width:100%;max-width:100%;max-height:100%;object-fit:contain;}
 
 .vendor-description { white-space:pre-line; }

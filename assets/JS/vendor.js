@@ -73,7 +73,9 @@
       card.appendChild(el('span','product-number','SOLUÇÃO '+String(index+1).padStart(2,'0')));
       if(product.logo){
         const frame=el('div','product-icon');
-        const img=addImage(frame,product.logo,'Ícone '+product.title);
+        // A manufacturer wordmark needs more horizontal room than a product icon.
+        if (product.logo === vendor.logo) frame.classList.add('product-icon--brand');
+        const img=addImage(frame,product.logo,'Identidade visual '+product.title);
         if(img){img.addEventListener('error',()=>{frame.hidden=true;});card.appendChild(frame);}
       }
       card.append(el('h3','',product.title),el('p','',product.description || 'Descrição em atualização.'),el('span','product-bar'));
