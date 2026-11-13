@@ -24,7 +24,7 @@
     return element;
   }
   function isLocalAsset(path) {
-    return typeof path === 'string' && /^(?:(?:\.\/)?assets\/IMG\/[\w./-]+|(?:\.\/)?pages\/vendors\/[a-z0-9_-]+\/[\w.-]+)\.(?:png|webp|jpe?g|svg|ico|avif)$/i.test(path) && !path.includes('..');
+    return typeof path === 'string' && /^(?:\.\/)?assets\/IMG\/[\w./-]+\.(?:png|webp|jpe?g|svg|ico|avif)$/i.test(path) && !path.includes('..');
   }
   function addImage(parent, source, alt) {
     if (!isLocalAsset(source)) return null;

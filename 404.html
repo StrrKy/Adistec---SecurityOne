@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Página não encontrada | Adistec Brasil</title>
+  <style>
+    :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:#edf4ff;color:#142c50;font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+    main{max-width:600px;padding:42px;border:1px solid #d4e1f5;border-radius:22px;background:#fff;box-shadow:0 14px 42px rgba(22,63,123,.08)}
+    small{color:#1464be;font-weight:800;letter-spacing:.12em}h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:16px 0}p{line-height:1.7;color:#536b84}
+    a{display:inline-block;margin-top:16px;padding:13px 20px;border-radius:10px;background:#1357ab;color:#fff;text-decoration:none;font-weight:700}a:hover{background:#0d417e}
+  </style>
+</head>
+<body>
+<main><small>ADISTEC · PORTFÓLIO</small><h1>Página não encontrada</h1><p id="message">O endereço informado não existe neste portfólio. Se você acessou um link antigo, vamos tentar encontrar a página atual.</p><a id="home" href="./index.html">Voltar ao início</a></main>
+<script>
+(function () {
+  'use strict';
+  // Github Pages serves this 404.html for historical paths, without recreating pages/.
+  const path = decodeURIComponent(location.pathname);
+  const marker = '/pages/';
+  const index = path.indexOf(marker);
+  const root = index < 0 ? path.substring(0, path.lastIndexOf('/') + 1) : path.slice(0,index+1);
+  document.getElementById('home').href = root + 'index.html';
+  if (index < 0) return;
+  const suffix = path.slice(index+1);
+  const section = /^pages\/sections\/(security|datacenter|alliances)\.html$/i.exec(suffix);
+  if (section) {
+    const target = section[1].toLowerCase() === 'alliances' ? 'security' : section[1].toLowerCase();
+    location.replace(root+'section.html?type='+target+location.hash);
+    return;
+  }
+  const vendor = /^pages\/vendors\/([a-z0-9_-]+)\/([a-z0-9 _-]+)\.html$/i.exec(suffix);
+  if (!vendor) return;
+  const slug = vendor[1].toLowerCase();
+  const filename = vendor[2].toLowerCase();
+  if (filename !== slug && !(slug === 'checkmarx' && filename === 'checkmarx copy')) return;
+  fetch(root+'assets/JSON/vendors.json',{cache:'no-cache'})
+    .then(response=>{if(!response.ok)throw new Error('Catálogo indisponível');return response.json();})
+    .then(catalog=>{
+      for (const type of ['security','datacenter']) {
+        const item = (catalog[type]||[]).find(value=>value.slug===slug);
+        if (item) {location.replace(root+'vendor.html?type='+type+'&name='+encodeURIComponent(slug)+location.hash);return;}
+      }
+      document.getElementById('message').textContent = 'Este fabricante não faz mais parte do catálogo atual.';
+    })
+    .catch(()=>{document.getElementById('message').textContent = 'Não foi possível consultar o catálogo agora. Acesse a página inicial.';});
+})();
+</script>
+</body></html>
