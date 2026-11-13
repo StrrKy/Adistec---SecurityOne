@@ -1,79 +1,96 @@
-# Adistec Brasil — Portfólio integrado (JSON)
+## Funcionalidades
 
-Versão unificada do portfólio de fabricantes da Adistec Brasil, com **identidade visual azul**, layout responsivo e dados centralizados em `assets/JSON/vendors.json`. O conteúdo foi migrado do projeto `portfolio-support-main.zip` fornecido, mantendo **35 fabricantes**, **171 produtos/soluções**, **135 contatos de equipe** e **363 termos tecnológicos distintos**.
+- **Home:** apresentação das duas áreas, indicadores calculados a partir do JSON e amostras de fabricantes.
+- **Catálogos:** busca por fabricante, descrição, palavra-chave ou solução; filtros por tags com múltipla seleção; opção de limpar filtros.
+- **Perfis de fabricantes:** descrições, produtos, tecnologias, concorrentes, perfis de clientes e contatos quando cadastrados.
+- **Contatos:** ação para copiar e-mails, com tratamento para navegadores em que a API de área de transferência não está disponível.
+- **Navegação:** sugestões de outros fabricantes e compatibilidade com links históricos ainda válidos.
+- **Interface responsiva:** layout adaptado para desktop, tablets e celulares, inclusive menu mobile.
+- **Estados vazios e erros:** tratamento para fabricante não encontrado, dados opcionais ausentes e falha no carregamento do catálogo.
 
-## Abrir localmente
+## Tecnologias e organização
 
-Requer apenas um servidor HTTP local (o site é estático; não precisa de Node, npm ou build):
+- HTML5, CSS3 e JavaScript puro, sem framework SPA e sem etapa de build.
+- Bootstrap distribuído nos próprios arquivos do projeto.
+- JSON como fonte de conteúdo para as páginas dinâmicas.
+- GitHub Pages como opção de hospedagem estática.
 
-```bash
-python -m http.server 8000
+```text
+portfolio-support/
+├── index.html                 # Home
+├── section.html               # Catálogo de Security / Data Center
+├── vendor.html                # Página de detalhes de cada fabricante
+├── assets/
+│   ├── JSON/vendors.json      # Fonte única de dados
+│   ├── JS/                    # Renderização, busca, filtros e navegação
+│   ├── CSS/                   # Estilos e Bootstrap
+│   └── IMG/                   # Logos, ícones e imagens
+├── pages/
+│   ├── sections/              # Redirecionamentos das antigas seções
+│   └── vendors/               # Redirecionamentos e mídias legadas
+├── legacy-source/             # Cópia histórica, não usada na renderização
 ```
 
-Acesse http://localhost:8000/. **Não abra `index.html` como `file://`**: navegadores limitam requisições `fetch()` a JSON local nesse protocolo.
+## Executar localmente
 
-## Publicar no GitHub Pages
+**Pré-requisito:** Python 3 ou outro servidor HTTP estático. Não é necessário instalar Node.js nem rodar `npm install`.
 
-1. Faça backup do repositório antes de substituir arquivos.
-2. Copie **todo o conteúdo desta pasta** (inclusive `.nojekyll`, `assets/`, `pages/`, `section.html`, `vendor.html`) para a **raiz da branch/pasta publicada** em `brlizkin.github.io/portfolio-support/`.
-3. Faça commit e aguarde a publicação pelo GitHub Pages. Nenhuma alteração foi enviada automaticamente ao GitHub.
-4. Confira as rotas `index.html`, `section.html?type=security`, `section.html?type=alliances`, `section.html?type=datacenter`, e `vendor.html?type=datacenter&name=pure` no site publicado.
+1. Extraia os arquivos mantendo `index.html` na raiz do diretório.
+2. Abra um terminal nesse diretório.
+3. Inicie o servidor:
 
-Os caminhos são **relativos**, então funcionam também quando o site está publicado abaixo de `/portfolio-support/`, e os URLs antigos de fabricantes/categorias redirecionam para o catálogo JSON.
+   ```bash
+   python -m http.server 8000
+   ```
 
-## Arquitetura
+4. Acesse **http://localhost:8000/**.
 
-| Arquivo | Finalidade |
-| --- | --- |
-| `index.html` | Página inicial, métricas derivadas do JSON e vitrines das três áreas |
-| `section.html?type=security\|alliances\|datacenter` | Catálogo por unidade, pesquisa e filtros de tags |
-| `vendor.html?type=security&name=forcepoint` | Perfil unificado de fabricante, sem HTML por marca |
-| `assets/JSON/vendors.json` | Fonte única da verdade: **12 Segurança, 13 Alliances e 10 Data Center** |
-| `assets/JS/common.js` | Busca/carregamento do JSON, links por slug, componentes compartilhados |
-| `assets/JS/app.js` | Home e indicadores |
-| `assets/JS/section.js` | Filtros, busca por marca/descrição/produto e tags |
-| `assets/JS/vendor.js` | Produtos, imagens, palavras-chave, concorrentes, perfil e contatos |
-| `assets/CSS/all.css` | Estilos próprios, tema azul; Bootstrap mantido sem customização direta |
-| `pages/vendors/{slug}/{slug}.html` | Compatibilidade com URLs antigas: **redirecionamentos**, não dados paralelos |
-| `pages/sections/{tipo}.html` | Compatibilidade com URLs antigas de categoria |
-| `legacy-source/` | Cópias dos HTML/CSS/JS originais antes da migração, para consulta |
-| `tools/import_legacy.py` | Script de migração a partir do *projeto original em HTML* |
-| `tools/make_redirects.py` | Geração inicial dos links legados (não executar novamente sem as fontes originais) |
-| `tests/test_integracao.py` | Testes de integridade dos dados e interações no navegador |
+**Importante:** abrir `index.html` diretamente com `file://` pode impedir o carregamento do JSON por restrições do navegador. Utilize HTTP local.
 
-## Atualizar um fabricante
+### Rotas principais
 
-Edite `assets/JSON/vendors.json` e mantenha o fabricante na seção correta. Cada entrada aceita:
+| Destino | Caminho |
+| :-- | :-- |
+| Home | `index.html` |
+| Catálogo Security | `section.html?type=security` |
+| Catálogo Data Center | `section.html?type=datacenter` |
 
-```json
-{
-  "name": "Nome apresentado",
-  "slug": "identificador-estavel",
-  "logo": "assets/IMG/logos/nome.png",
-  "summary": "Resumo mostrado nos cartões",
-  "description": "Descrição completa mostrada no perfil",
-  "tagline": "Frase principal do fabricante",
-  "heroSubtitle": "Resumo exibido na abertura do perfil",
-  "tags": ["Tecnologia", "Especialidade"],
-  "link": "vendor.html?type=security&name=identificador-estavel",
-  "products": [{"title": "Solução", "description": "Detalhes", "logo": ""}],
-  "competitors": ["Outro fabricante"],
-  "profile": {"segments": ["Tecnologia"], "sizes": ["Enterprise"], "roles": ["CISO"]},
-  "contacts": [{"name": "Pessoa", "role": "Especialista", "email": "contato@exemplo.com"}],
-  "productSectionTitle": "Principais produtos",
-  "productSectionSubtitle": "",
-  "productSectionNote": "",
-  "productMedia": "",
-  "heroImage": ""
-}
-```
+Os caminhos relativos do projeto são compatíveis com a subpasta `/portfolio-support/` do GitHub Pages.
 
-**Importante:** mantenha o `slug` ao renomear o fabricante. Os URLs funcionam por `type` + `slug`; por exemplo, o nome **EverPure** usa o identificador `pure`, e **One Trust** usa `1trust`.
+## Atualizar o catálogo (JSON)
 
-## Dados da origem e pontos para revisão editorial
+O arquivo **`assets/JSON/vendors.json` é a única fonte de dados da interface**. Ele possui exatamente duas listas principais: `security` e `datacenter`.
 
-O conteúdo textual (incluindo nomes, e-mails, produtos e descrições) foi transcrito das páginas fornecidas, sem auditoria externa de veracidade/atualização. Alguns pontos da **fonte** merecem revisão antes de publicação:
+Cada fabricante é um objeto dentro da lista de sua área. Campos principais:
 
-- Na página original de **Elastic**, o texto introdutório dos produtos menciona **Checkmarx** (aparente cópia de conteúdo). Ele foi preservado no JSON em `productSectionNote`, sem alterar a origem silenciosamente.
-- O e-mail visível no original de **VMware** para um dos contatos difere do valor no atributo `data-email`. O JSON conserva o **valor utilizado pelo botão de cópia** (`data-email`); confira com o time antes de compartilhar.
-- O original de **Claroty** usa extensão não padrão `.iix` em ícones de produtos; a versão integrada não tenta exibir um ícone inválido, mantendo o nome e a descrição de todas as soluções. O logo principal do fabricante funciona.
+| Campo | Uso |
+| :-- | :-- |
+| `name` | Nome exibido no catálogo e no perfil. |
+| `slug` | Identificador estável do fabricante nas URLs. Deve ser único. |
+| `logo` | Caminho relativo para a imagem do fabricante. |
+| `summary`, `description` | Resumo do cartão e descrição completa do perfil. |
+| `tags` | Tecnologias e palavras-chave usadas pelos filtros. |
+| `products` | Lista de produtos: `title`, `description` e, quando houver, `logo`. |
+| `competitors` | Lista de concorrentes conhecidos; pode ficar vazia. |
+| `profile` | Público-alvo em `segments`, `sizes` e `roles`. |
+| `contacts` | Lista de objetos com `name`, `role` e `email`; pode ficar vazia. |
+| `aliases` | Opcional: nomes alternativos aceitos na busca e na abertura do perfil. |
+| `sourceUrl`, `dataStatus` | Opcionais: referência da informação e observação editorial. |
+
+Outros campos já usados por fabricantes existentes — como `tagline`, `heroSubtitle`, `heroImage`, `productSectionTitle`, `productSectionSubtitle`, `productSectionNote` e `productMedia` — devem ser preservados durante edições. Para criar um registro novo, **copie a estrutura de um fabricante existente** e altere apenas os campos necessários.
+
+### Cuidados ao editar
+
+1. **Não altere `slug`s existentes** sem planejar a migração de URLs. Alguns identificadores são históricos, como `1trust` (OneTrust), `sentinel` (SentinelOne) e `pure` (EverPure).
+2. Mantenha `security` e `datacenter` como as únicas categorias ativas; não recrie `alliances`.
+3. Use caminhos relativos para imagens e confirme que os arquivos existem. Não inclua caminhos locais do computador.
+4. Quando não houver informações confiáveis de contatos, concorrentes ou perfis, use listas vazias (`[]`), sem inventar dados.
+5. **O JSON é público no GitHub Pages.** Não insira informações confidenciais, credenciais ou contatos que não possam ser divulgados publicamente.
+
+## Situação editorial e dados pendentes
+
+- Os **31 fabricantes já existentes** conservaram os dados previamente migrados; esses textos não passaram por revisão editorial completa nesta atualização.
+- Foram adicionados **A10, Citrix, Exabeam, Fortinet, Arista, Quantum e Supermicro**. Os perfis têm descrições e soluções iniciais com referências oficiais registradas em `sourceUrl`, mas ainda precisam de validação comercial.
+- Os sete novos registros **não têm contatos, concorrentes ou perfis de clientes cadastrados**. Não foram usados dados inventados para completar esses campos.
+- As identificações em SVG desses sete fabricantes são **tipográficas e provisórias**, não logotipos oficiais. Substitua-as quando houver artes autorizadas.
+- **Object First, CyberArk, HCL e Pentera** foram retirados do catálogo ativo conforme a lista definitiva.
