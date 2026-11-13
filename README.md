@@ -1,11 +1,3 @@
-# Portfólio Técnico — Adistec Brasil
-
-Catálogo estático e responsivo de fabricantes, tecnologias e soluções de **Segurança (Security)** e **Data Center**. O conteúdo é centralizado em um único JSON e a identidade visual azul é compartilhada por todas as páginas.
-
-**Site de publicação:** https://brlizkin.github.io/portfolio-support/  
-**Versão deste pacote:** 13/11/2026  
-**Fonte de dados:** [`assets/JSON/vendors.json`](assets/JSON/vendors.json)
-
 ## Catálogo atual
 
 | Categoria | Fabricantes | Produtos e soluções |
@@ -48,12 +40,7 @@ portfolio-support/
 │       ├── logos/               # Logos oficiais dos fabricantes
 │       ├── products/            # Mini-logos e imagens das soluções
 │       ├── heroes/              # Imagens de destaque preservadas
-│       └── icons/               # Ícones compartilhados
-├── tests/
-│   ├── test_integracao.py       # JSON e comportamento da interface
-│   └── test_redirects.py        # Simulação de URLs históricas
-├── LISTA_FABRICANTES.md
-└── RELATORIO_MIGRACAO.md
+└──     └── icons/               # Ícones compartilhados
 ```
 
 **Não há mais `pages/`, páginas HTML individuais de fabricante nem CSS individuais.** As imagens antes usadas em `pages/vendors/` foram copiadas para `assets/IMG/products/` e `assets/IMG/heroes/`, e os caminhos foram alterados no JSON. A árvore histórica `legacy-source/`, as pastas duplicadas `assets/css/`, `assets/js/`, `assets/images/` e as versões de Bootstrap não utilizadas também foram retiradas do site publicado.
@@ -124,26 +111,3 @@ O diretório `pages/` foi removido intencionalmente. No **GitHub Pages**, o arqu
 Para fabricantes ativos, o `404.html` consulta o JSON e redireciona o navegador. Fabricantes removidos não são redirecionados para perfis inexistentes.
 
 **Limitação importante:** esse recurso é um **redirecionamento JavaScript executado após uma resposta HTTP 404**, e não um redirecionamento HTTP 301/302. Exige JavaScript e que a hospedagem sirva `404.html` como página personalizada de erro, como ocorre no GitHub Pages. O servidor Python padrão não usa esse 404 personalizado; nele, navegue diretamente pelas novas URLs. Para SEO ou compatibilidade HTTP estrita, seria necessário manter arquivos de redirecionamento ou configurar um serviço de hospedagem com regras de redirecionamento.
-
-## Testes
-
-```bash
-python -m pip install beautifulsoup4 playwright
-python -m playwright install chromium
-python tests/test_integracao.py
-python tests/test_redirects.py
-```
-
-O segundo teste também exige **Node.js**. O primeiro valida os 37 perfis, os produtos, as imagens, filtros, contatos, aliases e layouts via documentos isolados no Chromium; o segundo executa, de forma simulada, a lógica de redirecionamento do `404.html` para as URLs históricas.
-
-**Limite de validação:** o navegador de testes do ambiente onde esta reorganização foi feita bloqueava requisições HTTP locais. Portanto, não foi possível comprovar os redirecionamentos em um servidor real ou no GitHub Pages publicado. Valide-os novamente após a implantação.
-
-## Publicar no GitHub Pages
-
-1. Faça backup ou crie uma branch no repositório `portfolio-support`.
-2. **Remova do repositório as pastas antigas** `pages/`, `legacy-source/`, `assets/css/`, `assets/js/` e `assets/images/`. Remova também os demais arquivos obsoletos que não estão no novo pacote. Apenas extrair o ZIP sobre os arquivos anteriores **não remove arquivos antigos**.
-3. Coloque o conteúdo do ZIP limpo na raiz de publicação, incluindo `404.html`, `assets/`, `.nojekyll` e os testes/documentos que desejar manter no Git.
-4. Revise `git status`, depois execute `git add -A`, `git commit` e `git push`.
-5. Confira a Home, os dois catálogos, os logos e as URLs antigas após a implantação.
-
-Consulte [`RELATORIO_MIGRACAO.md`](RELATORIO_MIGRACAO.md) para a lista das mudanças e os limites da validação.
