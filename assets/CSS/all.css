@@ -127,7 +127,6 @@ svg { display: block; }
 .category-bottom { display:flex; align-items:center; justify-content:space-between; padding-top:17px; border-top:1px solid var(--line); color:#286dcb; font-size:.84rem; font-weight:750; }
 .category-arrow { display:flex; align-items:center;justify-content:center; border-radius:50%; width:30px;height:30px; background:#eef6ff; font-size:1.16rem; transition: transform .2s,background .2s; }
 .category-card:hover .category-arrow { transform: translate(2px,-2px); background:#d9eeff; }
-.category-alliances .category-icon { background:#e5f6ff; color:#008dbf; }
 .category-datacenter .category-icon { background:#eaf0ff; color:#526cdf; }
 .featured-section { background: #fff; }
 .text-link { color:#1766cf; font-weight:750; font-size:.88rem; white-space:nowrap; padding-bottom:6px; border-bottom: 1px solid #b1d5fc; }

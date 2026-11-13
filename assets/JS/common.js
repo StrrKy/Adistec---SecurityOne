@@ -2,9 +2,8 @@
 (function () {
   'use strict';
   const SECTION_META = Object.freeze({
-    security: { label: 'Segurança', title: 'Segurança digital.', description: 'Fabricantes líderes em proteção de dados, identidades, aplicações e infraestrutura.', number: '01' },
-    alliances: { label: 'Alliances', title: 'Parcerias que conectam.', description: 'Alianças estratégicas do ecossistema Adistec e tecnologias complementares.', number: '02' },
-    datacenter: { label: 'Data Center', title: 'Infraestrutura que evolui.', description: 'Servidores, armazenamento, infraestrutura corporativa e soluções de alta disponibilidade.', number: '03' }
+    security: { label: 'Segurança', title: 'Segurança digital.', description: 'Tecnologias para proteção de dados, identidades, aplicações, infraestrutura e resiliência cibernética.', number: '01' },
+    datacenter: { label: 'Data Center', title: 'Infraestrutura que evolui.', description: 'Servidores, armazenamento, infraestrutura corporativa e soluções de alta disponibilidade.', number: '02' }
   });
   const $ = (selector, root = document) => root.querySelector(selector);
   const text = (value) => String(value == null ? '' : value);

@@ -1,6 +1,756 @@
 {
   "security": [
     {
+      "name": "A10",
+      "slug": "a10",
+      "logo": "assets/IMG/logos/a10-typographic.svg",
+      "summary": "Proteção de aplicações e redes com mitigação de DDoS, WAF e entrega de aplicações de alta performance.",
+      "tags": [
+        "DDoS",
+        "WAF",
+        "ADC",
+        "Load Balancing",
+        "Application Security",
+        "Network Security",
+        "TLS/SSL"
+      ],
+      "description": "Proteção de aplicações e redes com mitigação de DDoS, WAF e entrega de aplicações de alta performance.",
+      "tagline": "",
+      "heroSubtitle": "Proteção de aplicações e redes com mitigação de DDoS, WAF e entrega de aplicações de alta performance.",
+      "link": "vendor.html?type=security&name=a10",
+      "heroImage": "",
+      "products": [
+        {
+          "title": "A10 Defend DDoS Mitigator",
+          "description": "Mitigação automatizada de ataques de negação de serviço distribuída.",
+          "logo": ""
+        },
+        {
+          "title": "A10 Defend Next-Gen WAF",
+          "description": "Proteção de aplicações web com funcionalidades integradas à entrega de aplicações.",
+          "logo": ""
+        },
+        {
+          "title": "Thunder ADC",
+          "description": "Controlador de entrega de aplicações e balanceamento de carga de alto desempenho.",
+          "logo": ""
+        },
+        {
+          "title": "A10 Defend DDoS Detector",
+          "description": "Detecção de anomalias e ataques de DDoS em redes.",
+          "logo": ""
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [],
+      "profile": {
+        "segments": [],
+        "sizes": [],
+        "roles": []
+      },
+      "contacts": [],
+      "sourceUrl": "https://www.a10networks.com/products/",
+      "dataStatus": "Informações de portfólio de produto verificadas em fonte oficial; contatos, concorrentes e perfil não cadastrados."
+    },
+    {
+      "name": "Checkmarx",
+      "slug": "checkmarx",
+      "logo": "assets/IMG/logos/checkmarx.png",
+      "summary": "Identifica, prioriza e ajuda a corrigir vulnerabilidades em aplicações ao longo de todo o ciclo de desenvolvimento, reduzindo riscos de\n        falhas exploráveis em código, dependências e pipelines CI/CD.",
+      "tags": [
+        "Application Security",
+        "SAST",
+        "DAST",
+        "DevSecOps",
+        "IAST",
+        "Secrets Detection",
+        "DevOps",
+        "Shift Left",
+        "CI/CD Security",
+        "Secure Code"
+      ],
+      "description": "Fabricante global especializado em segurança de aplicações (Application Security / AST),\n            com forte foco em DevSecOps e proteção ao longo de todo o ciclo de desenvolvimento.",
+      "tagline": "AppSec Clarity for Everyone",
+      "heroSubtitle": "Identifica, prioriza e ajuda a corrigir vulnerabilidades em aplicações ao longo de todo o ciclo de desenvolvimento, reduzindo riscos de\n        falhas exploráveis em código, dependências e pipelines CI/CD.",
+      "link": "vendor.html?type=security&name=checkmarx",
+      "heroImage": "pages/vendors/checkmarx/hero-checkmarx.webp",
+      "products": [
+        {
+          "title": "Checkmarx One",
+          "description": "Plataforma unificada de Application Security (cloud-native).",
+          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
+        },
+        {
+          "title": "Checkmarx SAST",
+          "description": "Análise estática de código-fonte.",
+          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
+        },
+        {
+          "title": "Checkmarx DAST",
+          "description": "Testes dinâmicos de aplicações em execução.",
+          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
+        },
+        {
+          "title": "Checkmarx IAST",
+          "description": "Análise interativa durante execução da aplicação.",
+          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
+        },
+        {
+          "title": "Checkmarx SCA",
+          "description": "Análise de componentes open source e dependências.",
+          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
+        },
+        {
+          "title": "Checkmarx Secrets Detection",
+          "description": "Detecção de segredos e credenciais expostas.",
+          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "Produtos do portfolio Checkmarx, dedicado à análise e identificação de vulnerabilidades em códigos e aplicações.",
+      "productMedia": "",
+      "competitors": [
+        "Veracode",
+        "Snyk",
+        "Fortify",
+        "Synopsys",
+        "GitHub Advanced Security"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "E-commerce"
+        ],
+        "sizes": [
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "DevSecOps",
+          "AppSec",
+          "Segurança da Informação",
+          "CISO"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Pedro Barros",
+          "role": "Product Sales Manager",
+          "email": "pbarros@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "Claroty",
+      "slug": "claroty",
+      "logo": "assets/IMG/logos/claroty.png",
+      "summary": "Capacita as organizações a fortalecerem sua postura de cibersegurança e a protegerem seus sistemas ciberfísicos (CPS) contra um cenário de ameaças em constante evolução.",
+      "tags": [
+        "Secure Access",
+        "ZTNA",
+        "ICS Security",
+        "IIoT",
+        "CPS",
+        "Purdue Model",
+        "Asset Discovery",
+        "Network Monitoring",
+        "Anomaly Detection",
+        "Zero Trust for OT",
+        "Critical Infrastructure",
+        "NDR",
+        "OT Security"
+      ],
+      "description": "Fabricante global especializado em cibersegurança para ambientes industriais (OT/ICS), IoT e sistemas ciberfísicos, com origem em Israel e forte atuação em infraestruturas críticas.",
+      "tagline": "",
+      "heroSubtitle": "",
+      "link": "vendor.html?type=security&name=claroty",
+      "heroImage": "pages/vendors/claroty/hero-claroty.png",
+      "products": [
+        {
+          "title": "Claroty Continuous Threat Detection (CTD)",
+          "description": "Monitoramento e detecção de ameaças em ambientes OT.",
+          "logo": ""
+        },
+        {
+          "title": "Claroty xDome",
+          "description": "Plataforma SaaS para gestão de risco, visibilidade e segurança OT/CT/IoT.",
+          "logo": ""
+        },
+        {
+          "title": "Claroty xDome for Healthcare",
+          "description": "Plataforma SaaS para gestão de risco, visibilidade e segurança OT/CT/IoT com enfase em Eficiencia Operacional.",
+          "logo": ""
+        },
+        {
+          "title": "Claroty xDome Secure Access",
+          "description": "Acesso remoto seguro para ambientes industriais.",
+          "logo": ""
+        },
+        {
+          "title": "Claroty Edge",
+          "description": "Descoberta e inventário de ativos OT/IoT.",
+          "logo": ""
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "Nozomi",
+        "Dragos",
+        "Microsoft"
+      ],
+      "profile": {
+        "segments": [
+          "Healthcare",
+          "Energia",
+          "Óleo & Gás",
+          "Governo",
+          "Manufatura",
+          "Transporte",
+          "Infraestrutura"
+        ],
+        "sizes": [
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "OT Security",
+          "Compliance",
+          "Engenheiros de Automação",
+          "Infra OT"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "João Gustavo",
+          "role": "Product Sales Manager",
+          "email": "jgustavo@adistec.com"
+        },
+        {
+          "name": "Felipe Costa",
+          "role": "Engineering Sales Specialist",
+          "email": "fcosta@adistec.com"
+        },
+        {
+          "name": "Claroty Brasil Adistec",
+          "role": "",
+          "email": "clarotybr@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "Citrix",
+      "slug": "citrix",
+      "logo": "assets/IMG/logos/citrix-typographic.svg",
+      "summary": "Acesso seguro a aplicações, infraestrutura de trabalho digital e entrega de aplicações corporativas.",
+      "tags": [
+        "DaaS",
+        "VDI",
+        "ZTNA",
+        "Application Delivery",
+        "NetScaler",
+        "Virtualização",
+        "Secure Access"
+      ],
+      "description": "Acesso seguro a aplicações, infraestrutura de trabalho digital e entrega de aplicações corporativas.",
+      "tagline": "",
+      "heroSubtitle": "Acesso seguro a aplicações, infraestrutura de trabalho digital e entrega de aplicações corporativas.",
+      "link": "vendor.html?type=security&name=citrix",
+      "heroImage": "",
+      "products": [
+        {
+          "title": "Citrix DaaS",
+          "description": "Entrega de desktops e aplicações virtuais em diferentes ambientes.",
+          "logo": ""
+        },
+        {
+          "title": "NetScaler",
+          "description": "Entrega, disponibilidade e segurança de aplicações e serviços.",
+          "logo": ""
+        },
+        {
+          "title": "Citrix SecurAccess ZTNA",
+          "description": "Acesso a aplicações com abordagem Zero Trust.",
+          "logo": ""
+        },
+        {
+          "title": "Citrix Endpoint Management",
+          "description": "Gerenciamento e políticas para dispositivos e aplicações corporativas.",
+          "logo": ""
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [],
+      "profile": {
+        "segments": [],
+        "sizes": [],
+        "roles": []
+      },
+      "contacts": [],
+      "sourceUrl": "https://www.citrix.com/buy/licensing/product.html",
+      "dataStatus": "Informações de portfólio de produto verificadas em fonte oficial; contatos, concorrentes e perfil não cadastrados."
+    },
+    {
+      "name": "Delinea",
+      "slug": "delinea",
+      "logo": "assets/IMG/logos/delinea.png",
+      "summary": "Fabricante global especializado em gestão de acessos privilegiados (PAM), formado a partir da união da Thycotic com a Centrify, com forte atuação em ambientes corporativos.",
+      "tags": [
+        "PAM",
+        "Privileged Access",
+        "Zero Trust",
+        "AI Security",
+        "Least Privilege",
+        "Password Vaulting",
+        "Session Monitoring",
+        "Identity Security",
+        "ZTNA",
+        "ITDR",
+        "IGA",
+        "Elevação de privilégio"
+      ],
+      "description": "Fabricante global especializado em gestão de acessos privilegiados (PAM), formado a partir da união da Thycotic com a Centrify, com forte atuação em ambientes corporativos.",
+      "tagline": "",
+      "heroSubtitle": "",
+      "link": "vendor.html?type=security&name=delinea",
+      "heroImage": "pages/vendors/delinea/hero-delinea.webp",
+      "products": [
+        {
+          "title": "Delinea Platform",
+          "description": "Cofre e gestão de credenciais privilegiadas.",
+          "logo": "pages/vendors/delinea/favcon-delinea.png"
+        },
+        {
+          "title": "Delinea Remote Access",
+          "description": "Acesso remoto seguro com privilégios controlados.",
+          "logo": "pages/vendors/delinea/favcon-delinea.png"
+        },
+        {
+          "title": "Delinea ITDR",
+          "description": "Detecção e Resposta de Ameaças a incidentes relacionados a identidade em ambientes integrados.",
+          "logo": "pages/vendors/delinea/favcon-delinea.png"
+        },
+        {
+          "title": "Delinea PCS",
+          "description": "Least privilege e controle de elevação em endpoints.",
+          "logo": "pages/vendors/delinea/favcon-delinea.png"
+        },
+        {
+          "title": "Delinea Lifecycle Management (IGA)",
+          "description": "Governança de Identidade.",
+          "logo": "pages/vendors/delinea/favcon-delinea.png"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "BeyondTrust",
+        "Cyberark",
+        "One Identity"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "Educação"
+        ],
+        "sizes": [
+          "SMB",
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "CISO",
+          "Compliance",
+          "Segurança da Informação",
+          "Infraestrutura",
+          "SecOps",
+          "Cloud",
+          "Segurança Defensiva",
+          "Continuidade de Negócios"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Larissa Caetano",
+          "role": "Product Sales Manager",
+          "email": "lcaetano@adistec.com"
+        },
+        {
+          "name": "Augusto Fernandes",
+          "role": "Engineering Sales Specialist",
+          "email": "afernandes@adistec.com"
+        },
+        {
+          "name": "Delinea Brasil Adistec",
+          "role": "",
+          "email": "delineabrasil@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "DocuSign",
+      "slug": "docusign",
+      "logo": "assets/IMG/logos/docusign.png",
+      "summary": "Tudo o que você precisa para fechar um acordo",
+      "tags": [
+        "Electronic Signature",
+        "Digital Signature",
+        "CLM",
+        "Agreement Cloud",
+        "Workflow Automation",
+        "Compliance",
+        "Identity Verification"
+      ],
+      "description": "Fabricante global líder em assinaturas eletrônicas e gestão de acordos digitais, de origem norte-americana, amplamente utilizado em processos corporativos e jurídicos.",
+      "tagline": "",
+      "heroSubtitle": "",
+      "link": "vendor.html?type=security&name=docusign",
+      "heroImage": "pages/vendors/docusign/hero-docusign.png",
+      "products": [
+        {
+          "title": "DocuSign eSignature",
+          "description": "Aplicação de least privilege em endpoints, removendo direitos administrativos locais e controlando execução de aplicações.",
+          "logo": "pages/vendors/docusign/favcon-docusign.png"
+        },
+        {
+          "title": "DocuSign IAM",
+          "description": "Acesso seguro via navegador a sistemas e aplicações sensíveis, com isolamento de sessão e proteção de credenciais.",
+          "logo": "pages/vendors/docusign/favcon-docusign.png"
+        },
+        {
+          "title": "DocuSign CLM",
+          "description": "Publicação segura de aplicações internas com controle de acesso, auditoria e sem exposição direta ou VPN tradicional.",
+          "logo": "pages/vendors/docusign/favcon-docusign.png"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "Adobe Acrobat Sign",
+        "Dropbox Sign",
+        "Zoho Sign"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "Educação"
+        ],
+        "sizes": [
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "CISO",
+          "Compliance",
+          "Segurança da Informação",
+          "Infraestrutura",
+          "SecOps",
+          "Cloud",
+          "Segurança Defensiva",
+          "Continuidade de Negócios"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Gabriel Scaranello",
+          "role": "Product Sales Manager",
+          "email": "gscaranello@adistec.com"
+        },
+        {
+          "name": "Augusto Fernandes",
+          "role": "Engineering Sales Specialist",
+          "email": "afernandes@adistec.com"
+        },
+        {
+          "name": "Docusign Brasil Adistec",
+          "role": "",
+          "email": "docusignbr@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "Elastic",
+      "slug": "elastic",
+      "logo": "assets/IMG/logos/elastic.png",
+      "summary": "Open source search, analytics and AI Platform.",
+      "tags": [
+        "Elasticsearch",
+        "Elastic Stack",
+        "SIEM",
+        "XDR",
+        "Observability",
+        "Observabilidade",
+        "Log Management",
+        "APM",
+        "Search Engine",
+        "Cloud-Native",
+        "Machine Learning"
+      ],
+      "description": "Fabricante global especializado em segurança de aplicações (Application Security / AST),\n            com forte foco em DevSecOps e proteção ao longo de todo o ciclo de desenvolvimento.",
+      "tagline": "",
+      "heroSubtitle": "",
+      "link": "vendor.html?type=security&name=elastic",
+      "heroImage": "pages/vendors/elastic/hero-elastic.jpg",
+      "products": [
+        {
+          "title": "Elasticsearch",
+          "description": "Motor de busca e analytics distribuído.",
+          "logo": "pages/vendors/elastic/favcon-elastic.webp"
+        },
+        {
+          "title": "Kibana",
+          "description": "Plataforma Unificada. Visualização, dashboards e análise de dados.",
+          "logo": "pages/vendors/elastic/favcon-elastic.webp"
+        },
+        {
+          "title": "Logstash",
+          "description": "Ingestão e transformação de dados.",
+          "logo": "pages/vendors/elastic/favcon-elastic.webp"
+        },
+        {
+          "title": "Beats / Elastic Agent",
+          "description": "Coleta de logs, métricas e eventos.",
+          "logo": "pages/vendors/elastic/favcon-elastic.webp"
+        },
+        {
+          "title": "Elastic Security",
+          "description": "SIEM e XDR unificados.",
+          "logo": "pages/vendors/elastic/favcon-elastic.webp"
+        },
+        {
+          "title": "Elastic Observability",
+          "description": "APM, logs, métricas e uptime monitoring.",
+          "logo": "pages/vendors/elastic/favcon-elastic.webp"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "Produtos do portfolio Checkmarx, dedicado à análise e identificação de vulnerabilidades em códigos e aplicações.",
+      "productMedia": "",
+      "competitors": [
+        "Splunk",
+        "Datadog",
+        "OpenSearch",
+        "Graylog",
+        "SolarWinds"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "E-commerce"
+        ],
+        "sizes": [
+          "SMB",
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "DevSecOps",
+          "AppSec",
+          "Segurança da Informação",
+          "CISO"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Pedro Barros",
+          "role": "Product Sales Manager",
+          "email": "pbarros@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "Exabeam",
+      "slug": "exabeam",
+      "logo": "assets/IMG/logos/exabeam-typographic.svg",
+      "summary": "Operações de segurança com SIEM, análise comportamental e investigação e resposta a ameaças.",
+      "tags": [
+        "SIEM",
+        "UEBA",
+        "TDIR",
+        "SOAR",
+        "Threat Detection",
+        "Log Management",
+        "Security Operations"
+      ],
+      "description": "Operações de segurança com SIEM, análise comportamental e investigação e resposta a ameaças.",
+      "tagline": "",
+      "heroSubtitle": "Operações de segurança com SIEM, análise comportamental e investigação e resposta a ameaças.",
+      "link": "vendor.html?type=security&name=exabeam",
+      "heroImage": "",
+      "products": [
+        {
+          "title": "New-Scale SIEM",
+          "description": "Plataforma SIEM em nuvem para centralizar sinais, identificar e investigar ameaças.",
+          "logo": ""
+        },
+        {
+          "title": "New-Scale Analytics",
+          "description": "Análise e correlação de eventos para apoiar detecção e investigação.",
+          "logo": ""
+        },
+        {
+          "title": "New-Scale Fusion",
+          "description": "Plataforma para operações de segurança com recursos de detecção e resposta.",
+          "logo": ""
+        },
+        {
+          "title": "LogRhythm SIEM",
+          "description": "Solução de SIEM autogerenciada com coleta e análise de telemetria.",
+          "logo": ""
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [],
+      "profile": {
+        "segments": [],
+        "sizes": [],
+        "roles": []
+      },
+      "contacts": [],
+      "sourceUrl": "https://www.exabeam.com/",
+      "dataStatus": "Informações de portfólio de produto verificadas em fonte oficial; contatos, concorrentes e perfil não cadastrados."
+    },
+    {
+      "name": "Exagrid",
+      "slug": "exagrid",
+      "logo": "assets/IMG/logos/exagrid.png",
+      "summary": "Fabricante especializado em storage de backup em disco, de origem norte-americana, focado em alta performance, eficiência e recuperação rápida para ambientes corporativos.",
+      "tags": [
+        "Backup Storage",
+        "Data Resilience",
+        "Ransomware Protection",
+        "Deduplication",
+        "Immutable Backup",
+        "Business Continuity",
+        "Fast Restore",
+        "Data Protection",
+        "Backup Performance"
+      ],
+      "description": "Fabricante especializado em storage de backup em disco, de origem norte-americana, focado em alta performance, eficiência e recuperação rápida para ambientes corporativos.",
+      "tagline": "Tiered Backup Storage",
+      "heroSubtitle": "Fornece appliances de backup com deduplicação avançada e arquitetura em camadas, permitindo backups mais rápidos, restaurações previsíveis e proteção contra ransomware.",
+      "link": "vendor.html?type=security&name=exagrid",
+      "heroImage": "pages/vendors/exagrid/hero-exagrid.jpg",
+      "products": [
+        {
+          "title": "ExaGrid Tiered Backup Storage",
+          "description": "Appliance de storage de backup com arquitetura em camadas e deduplicação pós-processo.",
+          "logo": "pages/vendors/exagrid/favcon-exagrid.png"
+        },
+        {
+          "title": "ExaGrid Retention Time-Lock (RTL)",
+          "description": "Imutabilidade nativa para proteção contra ransomware.",
+          "logo": "pages/vendors/exagrid/favcon-exagrid.png"
+        },
+        {
+          "title": "ExaGrid Scale-Out Architecture",
+          "description": "Expansão modular sem impacto de performance.",
+          "logo": "pages/vendors/exagrid/favcon-exagrid.png"
+        },
+        {
+          "title": "API S3 (SOS API)",
+          "description": "Suporte ao protocolo S3.",
+          "logo": "pages/vendors/exagrid/favcon-exagrid.png"
+        }
+      ],
+      "productSectionTitle": "Appliance para Backup",
+      "productSectionSubtitle": "Principais Recursos",
+      "productSectionNote": "",
+      "productMedia": "pages/vendors/exagrid/product-exagrid.png",
+      "competitors": [
+        "Dell Data Domain",
+        "Object First",
+        "NetApp",
+        "HPE StoreOnce",
+        "Rubrik",
+        "Cohesity"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "Educação"
+        ],
+        "sizes": [
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "CISO",
+          "Compliance",
+          "Segurança da Informação",
+          "Infraestrutura",
+          "SecOps",
+          "Cloud",
+          "Backup",
+          "Continuidade de Negócios"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Renata Neves",
+          "role": "Business Sales Manager",
+          "email": "rneves@adistec.com"
+        },
+        {
+          "name": "Carlos Nascimento",
+          "role": "Product Sales Specialist",
+          "email": "cnascimento@adistec.com"
+        },
+        {
+          "name": "Marcilio Santana",
+          "role": "Product Sales Specialist",
+          "email": "msantana@adistec.com"
+        },
+        {
+          "name": "Barbara Santos",
+          "role": "Product Sales Specialist",
+          "email": "bsantos@adistec.com"
+        },
+        {
+          "name": "Andre Dias",
+          "role": "Engineering Sales Specialist",
+          "email": "adias@adistec.com"
+        },
+        {
+          "name": "Exagrid Brasil Adistec",
+          "role": "",
+          "email": "exagrid.br@adistec.com"
+        }
+      ]
+    },
+    {
       "name": "Forcepoint",
       "slug": "forcepoint",
       "logo": "assets/IMG/logos/forcepoint.png",
@@ -137,65 +887,130 @@
       ]
     },
     {
-      "name": "Tenable",
-      "slug": "tenable",
-      "logo": "assets/IMG/logos/tenable.png",
-      "summary": "Identifica, avalia e prioriza vulnerabilidades, falhas de configuração e riscos de exposição em ambientes on-premises, cloud, OT e aplicações, apoiando decisões de redução de risco baseada em contexto.",
+      "name": "Fortinet",
+      "slug": "fortinet",
+      "logo": "assets/IMG/logos/fortinet-typographic.svg",
+      "summary": "Cibersegurança integrada para redes, endpoints, aplicações, nuvem e operações de segurança.",
       "tags": [
-        "Vulnerability Management",
-        "Exposure Management",
-        "Attack Surface Management",
-        "CVE",
-        "Risk-Based Prioritization",
-        "Cloud Security",
-        "OT Security",
-        "Compliance",
-        "CNAPP",
-        "DAST",
-        "CTEM",
-        "Gerenciamento de Risco",
-        "IAM"
+        "NGFW",
+        "SASE",
+        "SD-WAN",
+        "ZTNA",
+        "EDR",
+        "SIEM",
+        "SOAR",
+        "WAF",
+        "Network Security"
       ],
-      "description": "Fabricante global especializado em gestão de vulnerabilidades e exposição cibernética, de origem norte-americana, amplamente reconhecido pelo Nessus.",
-      "tagline": "Reduza os riscos cibernéticos que impactam os negócios com o Tenable One.",
-      "heroSubtitle": "Identifica, avalia e prioriza vulnerabilidades, falhas de configuração e riscos de exposição em ambientes on-premises, cloud, \n        OT e aplicações, apoiando decisões de redução de risco baseada em contexto.",
-      "link": "vendor.html?type=security&name=tenable",
-      "heroImage": "pages/vendors/tenable/hero-tenable.webp",
+      "description": "Cibersegurança integrada para redes, endpoints, aplicações, nuvem e operações de segurança.",
+      "tagline": "",
+      "heroSubtitle": "Cibersegurança integrada para redes, endpoints, aplicações, nuvem e operações de segurança.",
+      "link": "vendor.html?type=security&name=fortinet",
+      "heroImage": "",
       "products": [
         {
-          "title": "Tenable Nessus",
-          "description": "Scanner de vulnerabilidades amplamente utilizado no mercado.",
-          "logo": "pages/vendors/tenable/cards.svg"
+          "title": "FortiGate NGFW",
+          "description": "Firewall de próxima geração para controle e proteção de redes.",
+          "logo": ""
         },
         {
-          "title": "Tenable.SC / Tenable.VM",
-          "description": "Gestão centralizada de vulnerabilidades para ambientes enterprise cloud / on-prem.",
-          "logo": "pages/vendors/tenable/cards.svg"
+          "title": "FortiSASE",
+          "description": "Acesso seguro com controles de segurança entregues pela nuvem.",
+          "logo": ""
         },
         {
-          "title": "Tenable.OT",
-          "description": "Visibilidade e avaliação de riscos em ambientes OT/ICS.",
-          "logo": "pages/vendors/tenable/cards.svg"
+          "title": "FortiEDR/XDR",
+          "description": "Detecção, investigação e resposta a ameaças em endpoints.",
+          "logo": ""
         },
         {
-          "title": "Tenable Cloud Security",
-          "description": "Segurança e postura de ambientes em nuvem.",
-          "logo": "pages/vendors/tenable/cards.svg"
+          "title": "FortiAnalyzer",
+          "description": "Análise e relatórios de registros de segurança para apoiar operações e conformidade.",
+          "logo": ""
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [],
+      "profile": {
+        "segments": [],
+        "sizes": [],
+        "roles": []
+      },
+      "contacts": [],
+      "sourceUrl": "https://www.fortinet.com/br/products",
+      "dataStatus": "Informações de portfólio de produto verificadas em fonte oficial; contatos, concorrentes e perfil não cadastrados."
+    },
+    {
+      "name": "Fortra",
+      "slug": "fortra",
+      "logo": "assets/IMG/logos/fortra.png",
+      "summary": "Soluções avançadas de segurança ofensiva e defensiva que cobrem toda a cadeia de ataques.",
+      "tags": [
+        "DLP",
+        "CASB",
+        "SWG",
+        "RBI",
+        "Email Security",
+        "Classificação de Dados",
+        "DSPM",
+        "Data Security",
+        "Data Protection",
+        "Cloud DLP",
+        "Data Visibility",
+        "Data Governance",
+        "Data Risk Management",
+        "Data Breach Prevention",
+        "Insider Threat Protection",
+        "Intellectual Property Protection",
+        "Personally Identifiable Information (PII)",
+        "Protected Health Information (PHI)",
+        "Financial Data Protection",
+        "GDPR Compliance",
+        "LGPD Compliance",
+        "HIPAA Compliance",
+        "PCI-DSS Compliance",
+        "Data Mapping",
+        "Data Labeling",
+        "Phishing Protection",
+        "Offensive Security",
+        "Security Automation",
+        "Brand Protection",
+        "Digital Risk Protection",
+        "Cloud Email Security"
+      ],
+      "description": "Fabricante global de cibersegurança, anteriormente conhecido como HelpSystems, com forte foco em proteção de dados, e-mail security, DLP e validação de segurança ofensiva.",
+      "tagline": "Nós quebramos a cadeia de ataques",
+      "heroSubtitle": "Soluções avançadas de segurança ofensiva e defensiva que cobrem toda a cadeia de ataques.",
+      "link": "vendor.html?type=security&name=fortra",
+      "heroImage": "pages/vendors/fortra/hero-fortra.png",
+      "products": [
+        {
+          "title": "Digital Guardian DLP",
+          "description": "Plataforma de Data Loss Prevention (DLP) focada em endpoints, rede e cloud, capaz de identificar, monitorar e bloquear tentativas de exfiltração de dados sensíveis.",
+          "logo": "pages/vendors/fortra/favcon-fortra.png"
         },
         {
-          "title": "Tenable Identity Exposure",
-          "description": "Vulnerabilidades e exposures no AD e Entra ID.",
-          "logo": "pages/vendors/tenable/cards.svg"
+          "title": "Fortra Email Security",
+          "description": "Plataforma de segurança de e-mail baseada em cloud que utiliza machine learning, threat intelligence e automação de resposta para detectar e remover phishing, malware e ataques BEC que conseguem bypassar controles tradicionais de e-mail.",
+          "logo": "pages/vendors/fortra/favcon-fortra.png"
         },
         {
-          "title": "Tenable Attack Surface Management",
-          "description": "Descoberta de ativos expostos na internet do domínio.",
-          "logo": "pages/vendors/tenable/cards.svg"
+          "title": "DSPM",
+          "description": "Solução de classificação de dados que permite rotular e categorizar informações sensíveis, ajudando usuários e sistemas a aplicar políticas de proteção adequadas.",
+          "logo": "pages/vendors/fortra/favcon-fortra.png"
         },
         {
-          "title": "Tenable Identity Exposure",
-          "description": "Vulnerabilidades e exposures no AD e Entra ID.",
-          "logo": "pages/vendors/tenable/cards.svg"
+          "title": "Cobalt Strike",
+          "description": "Plataforma avançada de adversary simulation e operações de Red Team usada para emular o comportamento de atacantes dentro de um ambiente corporativo. A ferramenta permite simular movimento lateral, persistência, exploração pós-comprometimento e comunicação C2, ajudando equipes de segurança a testar a capacidade de detecção e resposta do SOC.",
+          "logo": "pages/vendors/fortra/favcon-fortra.png"
+        },
+        {
+          "title": "Core Impact",
+          "description": "Core Impact é uma plataforma profissional de penetration testing automatizado e simulação de ataques, usada por equipes de segurança para identificar e explorar vulnerabilidades de forma controlada, replicando as mesmas técnicas utilizadas por atacantes reais.",
+          "logo": "pages/vendors/fortra/favcon-fortra.png"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -203,12 +1018,13 @@
       "productSectionNote": "",
       "productMedia": "",
       "competitors": [
-        "Qualys",
-        "Rapid7",
-        "Wiz",
+        "Proofpoint",
+        "Mimecast",
         "Microsoft",
-        "Beyond Trust",
-        "Cisco",
+        "Zscaler",
+        "Netskope",
+        "Pentera",
+        "Sophos",
         "Fortinet"
       ],
       "profile": {
@@ -220,7 +1036,6 @@
           "E-commerce"
         ],
         "sizes": [
-          "SMB",
           "Medium Business",
           "Enterprise"
         ],
@@ -228,350 +1043,14 @@
           "CISO",
           "Compliance",
           "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "SOC",
-          "GRC",
-          "Blue Team"
+          "Infraestrutura"
         ]
       },
       "contacts": [
         {
-          "name": "Jefferson Silva",
+          "name": "Gabriel Scaranello",
           "role": "Product Sales Manager",
-          "email": "jsilva@adistec.com"
-        },
-        {
-          "name": "Rafael Moreira",
-          "role": "Product Sales Specialist",
-          "email": "rmoreira@adistec.com"
-        },
-        {
-          "name": "Marcus Pedrosa",
-          "role": "Engineering Sales Specialist",
-          "email": "msilva@adistec.com"
-        },
-        {
-          "name": "Tenable Brasil Adistec",
-          "role": "",
-          "email": "tenable_pl_br@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Veeam",
-      "slug": "veeam",
-      "logo": "assets/IMG/logos/veeam.png",
-      "summary": "Garante disponibilidade, integridade,  recuperação e orquestração de dados e workloads, protegendo contra falhas, erros humanos, ataques de ransomware e desastres, com SLAs claros de RPO/RTO.",
-      "tags": [
-        "Backup & Recovery",
-        "Data Resilience",
-        "Ransomware Protection",
-        "DRaaS",
-        "Immutable Backup",
-        "Business Continuity",
-        "Microsoft 365",
-        "Compliance",
-        "Data Freedom"
-      ],
-      "description": "Fabricante global especializado em Data Protection e Resiliência de Dados, focado em backup, recuperação e continuidade de \n          negócios para ambientes híbridos e multi-cloud.",
-      "tagline": "Conheça a solução ciber-resiliente mais completa até o momento.",
-      "heroSubtitle": "Garante disponibilidade, integridade,  recuperação e orquestração de dados e workloads, protegendo contra falhas, erros humanos, \n        ataques de ransomware e desastres, com SLAs claros de RPO/RTO.",
-      "link": "vendor.html?type=security&name=veeam",
-      "heroImage": "pages/vendors/veeam/hero-veeam.webp",
-      "products": [
-        {
-          "title": "Veeam Data Platform (VBR)",
-          "description": "Plataforma de segurança de backup e recuperação para ambientes virtuais, físicos e cloud.",
-          "logo": "pages/vendors/veeam/favcon-veeam.jpg"
-        },
-        {
-          "title": "Veeam Data Cloud",
-          "description": "Proteção de dados em nuvem para M365 (Exchange, OneDrive, SharePoint, Teams), Vault (armazenamento em nuvem sem custo adicional), EntraID, Azure, Salesforce e AWS.",
-          "logo": "pages/vendors/veeam/favcon-veeam.jpg"
-        },
-        {
-          "title": "Veeam Cloud Connect",
-          "description": "Backup e DR em cloud para prestadores de serviço (Service Provider).",
-          "logo": "pages/vendors/veeam/favcon-veeam.jpg"
-        },
-        {
-          "title": "Veeam Cyber Secure",
-          "description": "Recursos avançados de proteção contra ransomware (imutable backups, threat detection).",
-          "logo": "pages/vendors/veeam/favcon-veeam.jpg"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Commvault",
-        "Cohesity",
-        "Acronis",
-        "Dell Data Protection"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "SMB",
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "Cloud",
-          "Backup",
-          "Continuidade de Negócios"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Renata Neves",
-          "role": "Business Sales Manager",
-          "email": "rneves@adistec.com"
-        },
-        {
-          "name": "Carlos Nascimento",
-          "role": "Product Sales Specialist",
-          "email": "cnascimento@adistec.com"
-        },
-        {
-          "name": "Marcilio Santana",
-          "role": "Product Sales Specialist",
-          "email": "msantana@adistec.com"
-        },
-        {
-          "name": "Barbara Santos",
-          "role": "Product Sales Specialist",
-          "email": "bsantos@adistec.com"
-        },
-        {
-          "name": "Andre Dias",
-          "role": "Engineering Sales Specialist",
-          "email": "adias@adistec.com"
-        },
-        {
-          "name": "Veeam Brasil Adistec",
-          "role": "",
-          "email": "veeambrasil@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Object First",
-      "slug": "object1",
-      "logo": "assets/IMG/logos/object1.png",
-      "summary": "Fabricante especializado em appliances de armazenamento imutável, criado especificamente para proteção de backups contra ransomware, com foco exclusivo no ecossistema Veeam.",
-      "tags": [
-        "Backup & Recovery",
-        "Data Resilience",
-        "Ransomware Protection",
-        "DRaaS",
-        "Immutable Backup",
-        "Business Continuity",
-        "Microsoft 365",
-        "Compliance",
-        "Data Freedom"
-      ],
-      "description": "Fabricante especializado em appliances de armazenamento imutável, criado especificamente para proteção de backups contra ransomware, com foco exclusivo no ecossistema Veeam.\n\nFornece storage seguro e imutável para backups, isolando dados críticos e garantindo recuperação confiável mesmo em cenários de ataques de ransomware, exclusão maliciosa ou comprometimento do ambiente.",
-      "tagline": "",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=security&name=object1",
-      "heroImage": "pages/vendors/object1/hero-mobile-object1.png",
-      "products": [
-        {
-          "title": "Ootbi (Out-of-the-Box Immutability)",
-          "description": "Appliance de storage imutável pronto para uso.",
-          "logo": "pages/vendors/object1/favcon-object1.png"
-        },
-        {
-          "title": "Object First Appliances",
-          "description": "Storage S3 imutável otimizado para Veeam Backup & Replication.",
-          "logo": "pages/vendors/object1/favcon-object1.png"
-        },
-        {
-          "title": "Secure by Design Architecture",
-          "description": "Arquitetura com isolamento de controle, dados e acesso.",
-          "logo": "pages/vendors/object1/favcon-object1.png"
-        },
-        {
-          "title": "Immutable Object Storage",
-          "description": "Armazenamento objeto com imutabilidade nativa.",
-          "logo": "pages/vendors/object1/favcon-object1.png"
-        }
-      ],
-      "productSectionTitle": "Appliance para Backup",
-      "productSectionSubtitle": "Principais Recursos",
-      "productSectionNote": "",
-      "productMedia": "pages/vendors/object1/product-object1.webp",
-      "competitors": [
-        "Dell Data Domain",
-        "ExaGrid",
-        "NetApp",
-        "HPE StoreOnce"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "SMB",
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "Cloud",
-          "Backup",
-          "Continuidade de Negócios"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Renata Neves",
-          "role": "Business Sales Manager",
-          "email": "rneves@adistec.com"
-        },
-        {
-          "name": "Carlos Nascimento",
-          "role": "Product Sales Specialist",
-          "email": "cnascimento@adistec.com"
-        },
-        {
-          "name": "Marcilio Santana",
-          "role": "Product Sales Specialist",
-          "email": "msantana@adistec.com"
-        },
-        {
-          "name": "Barbara Santos",
-          "role": "Product Sales Specialist",
-          "email": "bsantos@adistec.com"
-        },
-        {
-          "name": "Andre Dias",
-          "role": "Engineering Sales Specialist",
-          "email": "adias@adistec.com"
-        },
-        {
-          "name": "Object First Brasil Adistec",
-          "role": "",
-          "email": "objectfirstBR@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Zscaler",
-      "slug": "zscaler",
-      "logo": "assets/IMG/logos/zscaler.svg",
-      "summary": "Protege acesso de usuários, aplicações e dados eliminando a necessidade de VPNs tradicionais, aplicando Zero Trust para acesso à internet e aplicações privadas, com inspeção de tráfego em escala global.",
-      "tags": [
-        "SASE",
-        "SSE",
-        "ZTNA",
-        "SWG",
-        "CASB",
-        "CDR",
-        "RBI",
-        "DLP",
-        "Cloud Security",
-        "Classificação de Dados",
-        "Zero Trust"
-      ],
-      "description": "Fabricante global líder em segurança cloud-native, pioneiro no modelo Secure Access Service Edge (SASE) e Zero Trust, com plataforma 100% SaaS e presença global.",
-      "tagline": "Libere o poder do zero trust + IA",
-      "heroSubtitle": "Protege acesso de usuários, aplicações e dados eliminando a necessidade de VPNs tradicionais, aplicando Zero Trust para acesso à internet e aplicações privadas,\n         com inspeção de tráfego em escala global.",
-      "link": "vendor.html?type=security&name=zscaler",
-      "heroImage": "pages/vendors/zscaler/hero-zscaler.jpg",
-      "products": [
-        {
-          "title": "Zscaler Internet Access (ZIA)",
-          "description": "Segurança de acesso à internet (SWG, CASB, DLP, firewall cloud).",
-          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
-        },
-        {
-          "title": "Zscaler Private Access (ZPA)",
-          "description": "Acesso Zero Trust a aplicações privadas (ZTNA).",
-          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
-        },
-        {
-          "title": "Zscaler Digital Experience (ZDX)",
-          "description": "Monitoramento da experiência digital do usuário.",
-          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
-        },
-        {
-          "title": "Zscaler Data Protection",
-          "description": "Proteção de dados em trânsito e em cloud.",
-          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
-        },
-        {
-          "title": "Zscaler Secure AI",
-          "description": "Governança e proteção do uso de IA, aplicando Zero Trust e DLP para evitar vazamento de dados e riscos em aplicações de IA generativa.",
-          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Palo Alto Networks",
-        "Broadcom",
-        "Microsoft",
-        "Cloudflare",
-        "Netskope",
-        "Cato Networks"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "Network Security",
-          "SecOps",
-          "Network"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Lucas Ferreira",
-          "role": "Product Sales Manager",
-          "email": "lferreira@adistec.com"
-        },
-        {
-          "name": "Ingrid Lima",
-          "role": "Product Sales Specialist",
-          "email": "ilima@adistec.com"
+          "email": "gscaranello@adistec.com"
         },
         {
           "name": "Felipe Costa",
@@ -676,48 +1155,98 @@
       ]
     },
     {
-      "name": "Thales",
-      "slug": "thales",
-      "logo": "assets/IMG/logos/thales.png",
-      "summary": "Grupo global de tecnologia, de origem francesa, com forte atuação em defesa, aeroespacial e cibersegurança, sendo referência em proteção de dados e criptografia.",
+      "name": "Nozomi",
+      "slug": "nozomi",
+      "logo": "assets/IMG/logos/nozomi.png",
+      "summary": "Protege redes OT, ICS e IoT contra ameaças cibernéticas, oferecendo visibilidade, detecção de ameaças e monitoramento contínuo sem impacto operacional.",
       "tags": [
-        "Data Encryption",
-        "HSM",
-        "Key Management",
-        "IAM",
-        "Tokenization",
-        "Cloud Security",
-        "PKI",
-        "Compliance",
-        "Zero Trust",
-        "Mascaramento de Dados",
-        "Data Protection"
+        "GenAI",
+        "Inteligencia Artificial",
+        "Industrial Cybersecurity",
+        "ICS Security",
+        "Operational Technology",
+        "CPS",
+        "Purdue Model",
+        "Network Monitoring",
+        "Anomaly Detection",
+        "Zero Trust for OT",
+        "Critical Infrastructure",
+        "NDR",
+        "SCADA Security",
+        "OT Security",
+        "Asset Discovery",
+        "Asset Inventory",
+        "Asset Visibility",
+        "Vulnerability Identification",
+        "Threat Detection",
+        "Threat Intelligence",
+        "Behavioral Analysis",
+        "PLC Security",
+        "IEC",
+        "NIST",
+        "NERC",
+        "BACnet",
+        "Modbus",
+        "PROFINET",
+        "HMI Monitoring",
+        "Guardian Air",
+        "Wireless OT"
       ],
-      "description": "Fabricante global especializado em gestão de vulnerabilidades e exposição cibernética, de origem norte-americana, amplamente reconhecido pelo Nessus.",
-      "tagline": "Building a future we can all trust.",
-      "heroSubtitle": "Protege dados sensíveis, identidades e aplicações por meio de criptografia, gestão de chaves, HSM e controle de acessos, garantindo confidencialidade e conformidade em ambientes on-premises, cloud e híbridos.",
-      "link": "vendor.html?type=security&name=thales",
-      "heroImage": "pages/vendors/thales/hero-thales.webp",
+      "description": "Fabricante global especializado em cibersegurança para ambientes industriais (OT/ICS), fundado na Suíça, com forte presença em infraestruturas críticas.",
+      "tagline": "Conheça a solução ciber-resiliente mais completa até o momento.",
+      "heroSubtitle": "Protege redes OT, ICS e IoT contra ameaças cibernéticas, oferecendo visibilidade, detecção de ameaças e monitoramento contínuo sem impacto operacional.",
+      "link": "vendor.html?type=security&name=nozomi",
+      "heroImage": "pages/vendors/nozomi/hero-nozomi.jpg",
       "products": [
         {
-          "title": "Thales CipherTrust Transparent Encryption",
-          "description": "Plataforma unificada de criptografia e gestão de acesso.",
-          "logo": "pages/vendors/thales/favcon-thales.png"
+          "title": "Nozomi Vantage",
+          "description": "Plataforma SaaS para gestão centralizada de inventário, visibilidade, risco, detecção de ameaças e análise em ambientes OT/IoT/IT. Oferece dashboards unificados, análise com IA, vulnerabilidades e risco de ativos globalmente.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
         },
         {
-          "title": "Thales Luna HSM",
-          "description": "Hardware Security Modules para proteção de chaves criptográficas.",
-          "logo": "pages/vendors/thales/favcon-thales.png"
+          "title": "Nozomi CMC",
+          "description": "Console on-premise para gerenciar sensores Guardian e recursos da plataforma. Visibilidade OT/IoT localmente, fornecendo inventário, monitoramento e detecção de ameaças em múltiplos sites.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
         },
         {
-          "title": "Thales Ciphertrust Tokenization",
-          "description": "Embaralhamento de conteúdo de banco de dados.",
-          "logo": "pages/vendors/thales/favcon-thales.png"
+          "title": "Nozomi Guardian",
+          "description": "Sensor de rede que realiza descoberta passiva de ativos, mapeamento de rede, monitoramento de protocolos industriais e comunicação, detecção de anomalias e visibilidade OT/IoT.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
         },
         {
-          "title": "Thales Ciphertrust Secrets Management",
-          "description": "Gerenciamento de chaves, certificados.",
-          "logo": "pages/vendors/thales/favcon-thales.png"
+          "title": "Nozomi Guardian Air",
+          "description": "Sensor de redes sem fio que monitora espectro RF (Wi-Fi, BLE, Zigbee, LoRaWAN, celulares etc.), detecta dispositivos sem fio e ameaças específicas do espectro.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
+        },
+        {
+          "title": "Nozomi Arc",
+          "description": "Sensor host-based de endpoint que oferece visibilidade e proteção local, coleta inventário, monitoramento de eventos e pode atuar também como sensor de rede.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
+        },
+        {
+          "title": "Nozomi Arc Embedded",
+          "description": "Versão do Arc embutida diretamente em dispositivos ICS/endpoints (ex.: controladores industriais), para visibilidade e detecção mais profunda no nível Purdue 0-1. Mitsubishi e Schneider já possuem equipamentos com o Arc embarcado.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
+        },
+        {
+          "title": "Nozomi Threat Intelligence",
+          "description": "Serviço de inteligência contínua que entrega indicadores de compromisso (IOCs), regras YARA/Sigma, vulnerabilidades e TTPs para enriquecer detecção e análise de ameaças OT/IoT.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
+        },
+        {
+          "title": "Nozomi Smart Polling",
+          "description": "Complemento ao Guardian que adiciona polling ativo discreto para coletar informações detalhadas de dispositivos sem interromper operações, melhorando inventário e avaliações de risco.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
+        },
+        {
+          "title": "Nozomi Asset Intelligence",
+          "description": "Serviço que melhora classificação e identificação de dispositivos, adicionando contexto de vulnerabilidade, versões, recalls e informações detalhadas para visibilidade quase 100% precisa.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
+        },
+        {
+          "title": "Nozomi Vantage IQ",
+          "description": "Camada de análise com IA dentro do Vantage, priorizando eventos críticos, reduzindo ruído de alertas e guiando analistas com recomendações e insights acionáveis.",
+          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -725,10 +1254,107 @@
       "productSectionNote": "",
       "productMedia": "",
       "competitors": [
-        "Entrust",
-        "Fortanix",
-        "IBM",
-        "Utimaco"
+        "Claroty",
+        "Dragos",
+        "Microsoft"
+      ],
+      "profile": {
+        "segments": [
+          "Indústria",
+          "Energia",
+          "Óleo & Gás",
+          "Governo",
+          "Manufatura",
+          "Transporte",
+          "Infraestrutura"
+        ],
+        "sizes": [
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "OT Security",
+          "Compliance",
+          "Engenheiros de Automação",
+          "Infra OT"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Larissa Caetano",
+          "role": "Product Sales Manager",
+          "email": "lcaetano@adistec.com"
+        },
+        {
+          "name": "Felipe Costa",
+          "role": "Engineering Sales Specialist",
+          "email": "fcosta@adistec.com"
+        },
+        {
+          "name": "Nozomi Brasil Adistec",
+          "role": "",
+          "email": "nozomibrasil@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "One Identity",
+      "slug": "oneidentity",
+      "logo": "assets/IMG/logos/oneidentity.svg",
+      "summary": "Gerencia, governa e protege identidades humanas e não humanas, garantindo acessos corretos, no momento certo, com foco em compliance, redução de risco e automação de identidades em ambientes on-premises, cloud e híbridos.",
+      "tags": [
+        "IAM",
+        "IGA",
+        "PAM",
+        "Access Management",
+        "Zero Trust",
+        "Identity Governance",
+        "Least Privilege",
+        "Compliance",
+        "Identity Lifecycle"
+      ],
+      "description": "Fabricante global especializado em Identity and Access Management (IAM), focado em governança de identidades, controle de acessos privilegiados e gestão de identidades híbridas.",
+      "tagline": "Unifique a segurança de sua identidade com o One Identity Fabric",
+      "heroSubtitle": "Gerencia, governa e protege identidades humanas e não humanas, garantindo acessos corretos, no momento certo, com foco em compliance, redução de risco e automação de identidades em ambientes on-premises, cloud e híbridos.",
+      "link": "vendor.html?type=security&name=oneidentity",
+      "heroImage": "pages/vendors/oneidentity/hero-oneidentity.jpg",
+      "products": [
+        {
+          "title": "One Identity Manager",
+          "description": "Governança e administração do ciclo de vida de identidades (IGA).",
+          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
+        },
+        {
+          "title": "Safeguard PAM",
+          "description": "Gestão de acessos privilegiados com cofre, sessão e auditoria.",
+          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
+        },
+        {
+          "title": "Active Roles",
+          "description": "Gestão, delegação e hardening de ambientes Active Directory.",
+          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
+        },
+        {
+          "title": "OneLogin",
+          "description": "IAM cloud com SSO, MFA e gestão de acessos.",
+          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
+        },
+        {
+          "title": "Password Manager",
+          "description": "Autoatendimento e redefinição segura de senhas.",
+          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "Cyberark",
+        "Delinea",
+        "SailPoint",
+        "Okta",
+        "Segura"
       ],
       "profile": {
         "segments": [
@@ -736,7 +1362,214 @@
           "Financeiro",
           "Saúde",
           "Governo",
-          "E-commerce"
+          "Educação"
+        ],
+        "sizes": [
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "Administradores",
+          "Compliance",
+          "Segurança da Informação",
+          "Infraestrutura",
+          "Network Security",
+          "SecOps",
+          "Network"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "William Arruda",
+          "role": "Product Sales Manager",
+          "email": "warruda@adistec.com"
+        },
+        {
+          "name": "Gabriel Lima",
+          "role": "Product Sales Specialist",
+          "email": "glima@adistec.com"
+        },
+        {
+          "name": "Flavio Jr",
+          "role": "Engineering Sales Specialist",
+          "email": "fjunior@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "OneTrust",
+      "slug": "1trust",
+      "logo": "assets/IMG/logos/1trust.png",
+      "summary": "OneTrust é a Plataforma de Governança Preparada para IA™.",
+      "tags": [
+        "Privacy Management",
+        "GRC",
+        "Data Privacy",
+        "LGPD",
+        "GDPR",
+        "Compliance",
+        "Consent Management",
+        "Risk Management",
+        "Third-Party Risk",
+        "Ethics & Compliance",
+        "Governança de Dados",
+        "AI"
+      ],
+      "description": "Fabricante global líder em privacidade, governança e gestão de risco, de origem norte-americana, amplamente reconhecido como referência em Privacy Management e GRC moderno.",
+      "tagline": "Continuous governance for AI",
+      "heroSubtitle": "",
+      "link": "vendor.html?type=security&name=1trust",
+      "heroImage": "pages/vendors/1trust/hero-1trust.webp",
+      "products": [
+        {
+          "title": "OneTrust Privacy & Data Governance",
+          "description": "Gestão de privacidade, inventário de dados e conformidade regulatória.",
+          "logo": "pages/vendors/1trust/favcon-1trust.ico"
+        },
+        {
+          "title": "OneTrust Consent & Preferences",
+          "description": "Gestão de consentimento e cookies.",
+          "logo": "pages/vendors/1trust/favcon-1trust.ico"
+        },
+        {
+          "title": "OneTrust GRC & Risk",
+          "description": "Governança, risco e compliance integrados.",
+          "logo": "pages/vendors/1trust/favcon-1trust.ico"
+        },
+        {
+          "title": "OneTrust Third-Party Risk Management (TPRM)",
+          "description": "Avaliação e monitoramento de riscos de terceiros.",
+          "logo": "pages/vendors/1trust/favcon-1trust.ico"
+        },
+        {
+          "title": "OneTrust AI Governance",
+          "description": "Governança do uso de IA, com inventário de modelos, avaliação de riscos, controles éticos, compliance regulatório (ex: AI Act) e monitoramento contínuo.",
+          "logo": "pages/vendors/1trust/favcon-1trust.ico"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "TrustArc",
+        "SAI360",
+        "RSA Archer",
+        "ServiceNow GRC",
+        "Privace Tools"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "Educação"
+        ],
+        "sizes": [
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "CISO",
+          "Compliance",
+          "Segurança da Informação",
+          "DPO",
+          "Jurídico",
+          "Cloud",
+          "Risco Corporativo",
+          "Continuidade de Negócios"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Gabriel Scaranello",
+          "role": "Product Sales Manager",
+          "email": "gscaranello@adistec.com"
+        },
+        {
+          "name": "One Trust Brasil Adistec",
+          "role": "",
+          "email": "onetrustbr@adistec.com"
+        }
+      ],
+      "aliases": [
+        "One Trust"
+      ]
+    },
+    {
+      "name": "Progress",
+      "slug": "progress",
+      "logo": "assets/IMG/logos/progress.png",
+      "summary": "Fornece plataformas para desenvolvimento, execução, integração e proteção de aplicações e dados, ajudando organizações a manter ambientes críticos estáveis, seguros e altamente disponíveis.",
+      "tags": [
+        "Application Development",
+        "Middleware",
+        "Managed File Transfer",
+        "Data Integration",
+        "Network Monitoring",
+        "Infrastructure Management",
+        "SecOps",
+        "NDR",
+        "Load Balance",
+        "DevOps",
+        "Banco de Dados"
+      ],
+      "description": "Fabricante global de software corporativo, de origem norte-americana, focado em desenvolvimento de aplicações, integração, gestão de dados e segurança de infraestrutura.",
+      "tagline": "Libere o poder da IA para o seu negócio",
+      "heroSubtitle": "Fornece plataformas para desenvolvimento, execução, integração e proteção de aplicações e dados, ajudando organizações a manter ambientes críticos estáveis, seguros e altamente disponíveis.",
+      "link": "vendor.html?type=security&name=progress",
+      "heroImage": "pages/vendors/progress/hero-progress.webp",
+      "products": [
+        {
+          "title": "MOVEit",
+          "description": "Transferência segura e gerenciada de arquivos (MFT).",
+          "logo": "pages/vendors/progress/favcon-progress.png"
+        },
+        {
+          "title": "WhatsUp Gold",
+          "description": "Monitoramento de redes e infraestrutura.",
+          "logo": "pages/vendors/progress/favcon-progress.png"
+        },
+        {
+          "title": "Kemp LoadMaster",
+          "description": "Load balancer e Application Delivery Controller (ADC).",
+          "logo": "pages/vendors/progress/favcon-progress.png"
+        },
+        {
+          "title": "Progress OpenEdge",
+          "description": "Plataforma de desenvolvimento e banco de dados.",
+          "logo": "pages/vendors/progress/favcon-progress.png"
+        },
+        {
+          "title": "Progress Telerik / Kendo UI",
+          "description": "Componentes para desenvolvimento de aplicações.",
+          "logo": "pages/vendors/progress/favcon-progress.png"
+        },
+        {
+          "title": "Progress Flowmon",
+          "description": "Network Detection and Response (NDR) e análise de tráfego para visibilidade de rede e detecção de ameaças.",
+          "logo": "pages/vendors/progress/favcon-progress.png"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "Fortra (GoAnywhere)",
+        "SolarWinds",
+        "IBM",
+        "F5",
+        "Broadcom"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "Educação"
         ],
         "sizes": [
           "SMB",
@@ -745,35 +1578,34 @@
         ],
         "roles": [
           "CISO",
-          "Compliance",
+          "Desenvolvimento",
           "Segurança da Informação",
           "Infraestrutura",
+          "Network Security",
           "SecOps",
-          "SOC",
-          "GRC",
-          "Blue Team"
+          "DevOps"
         ]
       },
       "contacts": [
         {
-          "name": "Jefferson Silva",
+          "name": "Renata Neves",
+          "role": "Business Sales Manager",
+          "email": "rneves@adistec.com"
+        },
+        {
+          "name": "Will Arruda",
           "role": "Product Sales Manager",
-          "email": "jsilva@adistec.com"
+          "email": "warruda@adistec.com"
         },
         {
-          "name": "Rafael Moreira",
+          "name": "Gabriel Lima",
           "role": "Product Sales Specialist",
-          "email": "rmoreira@adistec.com"
+          "email": "glima@adistec.com"
         },
         {
-          "name": "Marcus Pedrosa",
-          "role": "Engineering Sales Specialist",
-          "email": "msilva@adistec.com"
-        },
-        {
-          "name": "Thales Brasil Adistec",
+          "name": "Progress Brasil Adistec",
           "role": "",
-          "email": "thalesbrasil@adistec.com"
+          "email": "progressbr@adistec.com"
         }
       ]
     },
@@ -896,51 +1728,36 @@
       ]
     },
     {
-      "name": "One Identity",
-      "slug": "oneidentity",
-      "logo": "assets/IMG/logos/oneidentity.svg",
-      "summary": "Gerencia, governa e protege identidades humanas e não humanas, garantindo acessos corretos, no momento certo, com foco em compliance, redução de risco e automação de identidades em ambientes on-premises, cloud e híbridos.",
+      "name": "Ridge Security",
+      "slug": "ridge",
+      "logo": "assets/IMG/logos/ridge.png",
+      "summary": "Simula ataques cibernéticos de ponta a ponta para validar controles de segurança, ajudando organizações a identificar falhas exploráveis, priorizar correções e reduzir riscos reais, de forma segura e contínua.",
       "tags": [
-        "IAM",
-        "IGA",
-        "PAM",
-        "Access Management",
-        "Zero Trust",
-        "Identity Governance",
-        "Least Privilege",
+        "Vulnerability Management",
+        "Exposure Management",
+        "Attack Surface Management",
+        "CVE",
+        "Risk-Based Prioritization",
+        "Cloud Security",
+        "OT Security",
         "Compliance",
-        "Identity Lifecycle"
+        "CNAPP",
+        "DAST",
+        "CTEM",
+        "IAM",
+        "Red Team",
+        "Segurança Ofensiva"
       ],
-      "description": "Fabricante global especializado em Identity and Access Management (IAM), focado em governança de identidades, controle de acessos privilegiados e gestão de identidades híbridas.",
-      "tagline": "Unifique a segurança de sua identidade com o One Identity Fabric",
-      "heroSubtitle": "Gerencia, governa e protege identidades humanas e não humanas, garantindo acessos corretos, no momento certo, com foco em compliance, redução de risco e automação de identidades em ambientes on-premises, cloud e híbridos.",
-      "link": "vendor.html?type=security&name=oneidentity",
-      "heroImage": "pages/vendors/oneidentity/hero-oneidentity.jpg",
+      "description": "Fabricante global especializado em validação contínua de segurança e testes de penetração automatizados, de origem asiática, com foco em simulação realista de ataques em ambientes corporativos.",
+      "tagline": "AI Agent for Automated Penetration Testing.",
+      "heroSubtitle": "Simula ataques cibernéticos de ponta a ponta para validar controles de segurança, ajudando organizações a identificar falhas exploráveis, priorizar correções e reduzir riscos reais, de forma segura e contínua.",
+      "link": "vendor.html?type=security&name=ridge",
+      "heroImage": "pages/vendors/ridge/hero-ridge.jpg",
       "products": [
         {
-          "title": "One Identity Manager",
-          "description": "Governança e administração do ciclo de vida de identidades (IGA).",
-          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
-        },
-        {
-          "title": "Safeguard PAM",
-          "description": "Gestão de acessos privilegiados com cofre, sessão e auditoria.",
-          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
-        },
-        {
-          "title": "Active Roles",
-          "description": "Gestão, delegação e hardening de ambientes Active Directory.",
-          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
-        },
-        {
-          "title": "OneLogin",
-          "description": "IAM cloud com SSO, MFA e gestão de acessos.",
-          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
-        },
-        {
-          "title": "Password Manager",
-          "description": "Autoatendimento e redefinição segura de senhas.",
-          "logo": "pages/vendors/oneidentity/favcon-oneidentity.png"
+          "title": "RidgeBot®",
+          "description": "Plataforma de pentest automatizado com simulação de ataques reais.",
+          "logo": "pages/vendors/ridge/cards.png"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -948,11 +1765,10 @@
       "productSectionNote": "",
       "productMedia": "",
       "competitors": [
-        "Cyberark",
-        "Delinea",
-        "SailPoint",
-        "Okta",
-        "Segura"
+        "Pentera",
+        "Cymulate",
+        "SafeBreach",
+        "AttackIQ"
       ],
       "profile": {
         "segments": [
@@ -960,42 +1776,49 @@
           "Financeiro",
           "Saúde",
           "Governo",
-          "Educação"
+          "E-commerce"
         ],
         "sizes": [
+          "SMB",
           "Medium Business",
           "Enterprise"
         ],
         "roles": [
-          "Administradores",
+          "CISO",
           "Compliance",
           "Segurança da Informação",
           "Infraestrutura",
-          "Network Security",
           "SecOps",
-          "Network"
+          "SOC",
+          "GRC",
+          "Blue Team"
         ]
       },
       "contacts": [
         {
-          "name": "William Arruda",
-          "role": "Product Sales Manager",
-          "email": "warruda@adistec.com"
+          "name": "Anderson Nascarella",
+          "role": "Business Sales Manager",
+          "email": "anascarella@adistec.com"
         },
         {
-          "name": "Gabriel Lima",
+          "name": "Gabriel Scaranello",
           "role": "Product Sales Specialist",
-          "email": "glima@adistec.com"
+          "email": "gscaranello@adistec.com"
         },
         {
-          "name": "Flavio Jr",
+          "name": "Marcus Pedrosa",
           "role": "Engineering Sales Specialist",
-          "email": "fjunior@adistec.com"
+          "email": "msilva@adistec.com"
+        },
+        {
+          "name": "Ridge Brasil Adistec",
+          "role": "",
+          "email": "ridgesecuritybr@adistec.com"
         }
       ]
     },
     {
-      "name": "Sentinel One",
+      "name": "SentinelOne",
       "slug": "sentinel",
       "logo": "assets/IMG/logos/sentinel.png",
       "summary": "Previne, detecta e responde a ataques avançados em endpoints.",
@@ -1095,1459 +1918,9 @@
           "role": "",
           "email": "sentinelonebr@adistec.com"
         }
-      ]
-    },
-    {
-      "name": "Exagrid",
-      "slug": "exagrid",
-      "logo": "assets/IMG/logos/exagrid.png",
-      "summary": "Fabricante especializado em storage de backup em disco, de origem norte-americana, focado em alta performance, eficiência e recuperação rápida para ambientes corporativos.",
-      "tags": [
-        "Backup Storage",
-        "Data Resilience",
-        "Ransomware Protection",
-        "Deduplication",
-        "Immutable Backup",
-        "Business Continuity",
-        "Fast Restore",
-        "Data Protection",
-        "Backup Performance"
       ],
-      "description": "Fabricante especializado em storage de backup em disco, de origem norte-americana, focado em alta performance, eficiência e recuperação rápida para ambientes corporativos.",
-      "tagline": "Tiered Backup Storage",
-      "heroSubtitle": "Fornece appliances de backup com deduplicação avançada e arquitetura em camadas, permitindo backups mais rápidos, restaurações previsíveis e proteção contra ransomware.",
-      "link": "vendor.html?type=security&name=exagrid",
-      "heroImage": "pages/vendors/exagrid/hero-exagrid.jpg",
-      "products": [
-        {
-          "title": "ExaGrid Tiered Backup Storage",
-          "description": "Appliance de storage de backup com arquitetura em camadas e deduplicação pós-processo.",
-          "logo": "pages/vendors/exagrid/favcon-exagrid.png"
-        },
-        {
-          "title": "ExaGrid Retention Time-Lock (RTL)",
-          "description": "Imutabilidade nativa para proteção contra ransomware.",
-          "logo": "pages/vendors/exagrid/favcon-exagrid.png"
-        },
-        {
-          "title": "ExaGrid Scale-Out Architecture",
-          "description": "Expansão modular sem impacto de performance.",
-          "logo": "pages/vendors/exagrid/favcon-exagrid.png"
-        },
-        {
-          "title": "API S3 (SOS API)",
-          "description": "Suporte ao protocolo S3.",
-          "logo": "pages/vendors/exagrid/favcon-exagrid.png"
-        }
-      ],
-      "productSectionTitle": "Appliance para Backup",
-      "productSectionSubtitle": "Principais Recursos",
-      "productSectionNote": "",
-      "productMedia": "pages/vendors/exagrid/product-exagrid.png",
-      "competitors": [
-        "Dell Data Domain",
-        "Object First",
-        "NetApp",
-        "HPE StoreOnce",
-        "Rubrik",
-        "Cohesity"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "Cloud",
-          "Backup",
-          "Continuidade de Negócios"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Renata Neves",
-          "role": "Business Sales Manager",
-          "email": "rneves@adistec.com"
-        },
-        {
-          "name": "Carlos Nascimento",
-          "role": "Product Sales Specialist",
-          "email": "cnascimento@adistec.com"
-        },
-        {
-          "name": "Marcilio Santana",
-          "role": "Product Sales Specialist",
-          "email": "msantana@adistec.com"
-        },
-        {
-          "name": "Barbara Santos",
-          "role": "Product Sales Specialist",
-          "email": "bsantos@adistec.com"
-        },
-        {
-          "name": "Andre Dias",
-          "role": "Engineering Sales Specialist",
-          "email": "adias@adistec.com"
-        },
-        {
-          "name": "Exagrid Brasil Adistec",
-          "role": "",
-          "email": "exagrid.br@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Ridge Security",
-      "slug": "ridge",
-      "logo": "assets/IMG/logos/ridge.png",
-      "summary": "Simula ataques cibernéticos de ponta a ponta para validar controles de segurança, ajudando organizações a identificar falhas exploráveis, priorizar correções e reduzir riscos reais, de forma segura e contínua.",
-      "tags": [
-        "Vulnerability Management",
-        "Exposure Management",
-        "Attack Surface Management",
-        "CVE",
-        "Risk-Based Prioritization",
-        "Cloud Security",
-        "OT Security",
-        "Compliance",
-        "CNAPP",
-        "DAST",
-        "CTEM",
-        "IAM",
-        "Red Team",
-        "Segurança Ofensiva"
-      ],
-      "description": "Fabricante global especializado em validação contínua de segurança e testes de penetração automatizados, de origem asiática, com foco em simulação realista de ataques em ambientes corporativos.",
-      "tagline": "AI Agent for Automated Penetration Testing.",
-      "heroSubtitle": "Simula ataques cibernéticos de ponta a ponta para validar controles de segurança, ajudando organizações a identificar falhas exploráveis, priorizar correções e reduzir riscos reais, de forma segura e contínua.",
-      "link": "vendor.html?type=security&name=ridge",
-      "heroImage": "pages/vendors/ridge/hero-ridge.jpg",
-      "products": [
-        {
-          "title": "RidgeBot®",
-          "description": "Plataforma de pentest automatizado com simulação de ataques reais.",
-          "logo": "pages/vendors/ridge/cards.png"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Pentera",
-        "Cymulate",
-        "SafeBreach",
-        "AttackIQ"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "E-commerce"
-        ],
-        "sizes": [
-          "SMB",
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "SOC",
-          "GRC",
-          "Blue Team"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Anderson Nascarella",
-          "role": "Business Sales Manager",
-          "email": "anascarella@adistec.com"
-        },
-        {
-          "name": "Gabriel Scaranello",
-          "role": "Product Sales Specialist",
-          "email": "gscaranello@adistec.com"
-        },
-        {
-          "name": "Marcus Pedrosa",
-          "role": "Engineering Sales Specialist",
-          "email": "msilva@adistec.com"
-        },
-        {
-          "name": "Ridge Brasil Adistec",
-          "role": "",
-          "email": "ridgesecuritybr@adistec.com"
-        }
-      ]
-    }
-  ],
-  "alliances": [
-    {
-      "name": "Checkmarx",
-      "slug": "checkmarx",
-      "logo": "assets/IMG/logos/checkmarx.png",
-      "summary": "Identifica, prioriza e ajuda a corrigir vulnerabilidades em aplicações ao longo de todo o ciclo de desenvolvimento, reduzindo riscos de\n        falhas exploráveis em código, dependências e pipelines CI/CD.",
-      "tags": [
-        "Application Security",
-        "SAST",
-        "DAST",
-        "DevSecOps",
-        "IAST",
-        "Secrets Detection",
-        "DevOps",
-        "Shift Left",
-        "CI/CD Security",
-        "Secure Code"
-      ],
-      "description": "Fabricante global especializado em segurança de aplicações (Application Security / AST),\n            com forte foco em DevSecOps e proteção ao longo de todo o ciclo de desenvolvimento.",
-      "tagline": "AppSec Clarity for Everyone",
-      "heroSubtitle": "Identifica, prioriza e ajuda a corrigir vulnerabilidades em aplicações ao longo de todo o ciclo de desenvolvimento, reduzindo riscos de\n        falhas exploráveis em código, dependências e pipelines CI/CD.",
-      "link": "vendor.html?type=alliances&name=checkmarx",
-      "heroImage": "pages/vendors/checkmarx/hero-checkmarx.webp",
-      "products": [
-        {
-          "title": "Checkmarx One",
-          "description": "Plataforma unificada de Application Security (cloud-native).",
-          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
-        },
-        {
-          "title": "Checkmarx SAST",
-          "description": "Análise estática de código-fonte.",
-          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
-        },
-        {
-          "title": "Checkmarx DAST",
-          "description": "Testes dinâmicos de aplicações em execução.",
-          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
-        },
-        {
-          "title": "Checkmarx IAST",
-          "description": "Análise interativa durante execução da aplicação.",
-          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
-        },
-        {
-          "title": "Checkmarx SCA",
-          "description": "Análise de componentes open source e dependências.",
-          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
-        },
-        {
-          "title": "Checkmarx Secrets Detection",
-          "description": "Detecção de segredos e credenciais expostas.",
-          "logo": "pages/vendors/checkmarx/favcon-checkmarx.png"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "Produtos do portfolio Checkmarx, dedicado à análise e identificação de vulnerabilidades em códigos e aplicações.",
-      "productMedia": "",
-      "competitors": [
-        "Veracode",
-        "Snyk",
-        "Fortify",
-        "Synopsys",
-        "GitHub Advanced Security"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "E-commerce"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "DevSecOps",
-          "AppSec",
-          "Segurança da Informação",
-          "CISO"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Pedro Barros",
-          "role": "Product Sales Manager",
-          "email": "pbarros@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Claroty",
-      "slug": "claroty",
-      "logo": "assets/IMG/logos/claroty.png",
-      "summary": "Capacita as organizações a fortalecerem sua postura de cibersegurança e a protegerem seus sistemas ciberfísicos (CPS) contra um cenário de ameaças em constante evolução.",
-      "tags": [
-        "Secure Access",
-        "ZTNA",
-        "ICS Security",
-        "IIoT",
-        "CPS",
-        "Purdue Model",
-        "Asset Discovery",
-        "Network Monitoring",
-        "Anomaly Detection",
-        "Zero Trust for OT",
-        "Critical Infrastructure",
-        "NDR",
-        "OT Security"
-      ],
-      "description": "Fabricante global especializado em cibersegurança para ambientes industriais (OT/ICS), IoT e sistemas ciberfísicos, com origem em Israel e forte atuação em infraestruturas críticas.",
-      "tagline": "",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=alliances&name=claroty",
-      "heroImage": "pages/vendors/claroty/hero-claroty.png",
-      "products": [
-        {
-          "title": "Claroty Continuous Threat Detection (CTD)",
-          "description": "Monitoramento e detecção de ameaças em ambientes OT.",
-          "logo": ""
-        },
-        {
-          "title": "Claroty xDome",
-          "description": "Plataforma SaaS para gestão de risco, visibilidade e segurança OT/CT/IoT.",
-          "logo": ""
-        },
-        {
-          "title": "Claroty xDome for Healthcare",
-          "description": "Plataforma SaaS para gestão de risco, visibilidade e segurança OT/CT/IoT com enfase em Eficiencia Operacional.",
-          "logo": ""
-        },
-        {
-          "title": "Claroty xDome Secure Access",
-          "description": "Acesso remoto seguro para ambientes industriais.",
-          "logo": ""
-        },
-        {
-          "title": "Claroty Edge",
-          "description": "Descoberta e inventário de ativos OT/IoT.",
-          "logo": ""
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Nozomi",
-        "Dragos",
-        "Microsoft"
-      ],
-      "profile": {
-        "segments": [
-          "Healthcare",
-          "Energia",
-          "Óleo & Gás",
-          "Governo",
-          "Manufatura",
-          "Transporte",
-          "Infraestrutura"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "OT Security",
-          "Compliance",
-          "Engenheiros de Automação",
-          "Infra OT"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "João Gustavo",
-          "role": "Product Sales Manager",
-          "email": "jgustavo@adistec.com"
-        },
-        {
-          "name": "Felipe Costa",
-          "role": "Engineering Sales Specialist",
-          "email": "fcosta@adistec.com"
-        },
-        {
-          "name": "Claroty Brasil Adistec",
-          "role": "",
-          "email": "clarotybr@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Cyberark",
-      "slug": "cyberark",
-      "logo": "assets/IMG/logos/cyberark.png",
-      "summary": "Secure every identity. Power every possibility.",
-      "tags": [
-        "PAM",
-        "Privileged Access",
-        "Zero Trust",
-        "AI Security",
-        "Least Privilege",
-        "Password Vaulting",
-        "Session Monitoring",
-        "Identity Security",
-        "ZTNA",
-        "ITDR",
-        "IGA",
-        "Elevação de privilégio"
-      ],
-      "description": "Fabricante global especializado em gestão de acessos privilegiados (PAM), formado a partir da união da Thycotic com a Centrify, com forte atuação em ambientes corporativos.",
-      "tagline": "Secure every identity.",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=alliances&name=cyberark",
-      "heroImage": "pages/vendors/cyberark/hero-cyberark.webp",
-      "products": [
-        {
-          "title": "EPM (Endpoint Privilege Management)",
-          "description": "Aplicação de least privilege em endpoints, removendo direitos administrativos locais e controlando execução de aplicações.",
-          "logo": "pages/vendors/cyberark/favcon-cyberark.webp"
-        },
-        {
-          "title": "Secure Browser / Secure Web Access",
-          "description": "Acesso seguro via navegador a sistemas e aplicações sensíveis, com isolamento de sessão e proteção de credenciais.",
-          "logo": "pages/vendors/cyberark/favcon-cyberark.webp"
-        },
-        {
-          "title": "App Gateway / Acesso a aplicações",
-          "description": "Publicação segura de aplicações internas com controle de acesso, auditoria e sem exposição direta ou VPN tradicional.",
-          "logo": "pages/vendors/cyberark/favcon-cyberark.webp"
-        },
-        {
-          "title": "Zero Standing Privilege (ZSP)",
-          "description": "Acesso privilegiado just-in-time, eliminando privilégios permanentes e reduzindo risco de comprometimento de identidades.",
-          "logo": "pages/vendors/cyberark/favcon-cyberark.webp"
-        },
-        {
-          "title": "Zilla (IGA)",
-          "description": "Governança moderna de identidades, automatizando provisionamento, revisões de acesso e compliance.",
-          "logo": "pages/vendors/cyberark/favcon-cyberark.webp"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "BeyondTrust",
-        "Delinea",
-        "One Identity"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "Cloud",
-          "Segurança Defensiva",
-          "Continuidade de Negócios"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Gabriel Scaranello",
-          "role": "Product Sales Specialist",
-          "email": "gscaranello@adistec.com"
-        },
-        {
-          "name": "Augusto Fernandes",
-          "role": "Engineering Sales Specialist",
-          "email": "afernandes@adistec.com"
-        },
-        {
-          "name": "Cyberark Brasil Adistec",
-          "role": "",
-          "email": "cyberarkbrasil@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Delinea",
-      "slug": "delinea",
-      "logo": "assets/IMG/logos/delinea.png",
-      "summary": "Fabricante global especializado em gestão de acessos privilegiados (PAM), formado a partir da união da Thycotic com a Centrify, com forte atuação em ambientes corporativos.",
-      "tags": [
-        "PAM",
-        "Privileged Access",
-        "Zero Trust",
-        "AI Security",
-        "Least Privilege",
-        "Password Vaulting",
-        "Session Monitoring",
-        "Identity Security",
-        "ZTNA",
-        "ITDR",
-        "IGA",
-        "Elevação de privilégio"
-      ],
-      "description": "Fabricante global especializado em gestão de acessos privilegiados (PAM), formado a partir da união da Thycotic com a Centrify, com forte atuação em ambientes corporativos.",
-      "tagline": "",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=alliances&name=delinea",
-      "heroImage": "pages/vendors/delinea/hero-delinea.webp",
-      "products": [
-        {
-          "title": "Delinea Platform",
-          "description": "Cofre e gestão de credenciais privilegiadas.",
-          "logo": "pages/vendors/delinea/favcon-delinea.png"
-        },
-        {
-          "title": "Delinea Remote Access",
-          "description": "Acesso remoto seguro com privilégios controlados.",
-          "logo": "pages/vendors/delinea/favcon-delinea.png"
-        },
-        {
-          "title": "Delinea ITDR",
-          "description": "Detecção e Resposta de Ameaças a incidentes relacionados a identidade em ambientes integrados.",
-          "logo": "pages/vendors/delinea/favcon-delinea.png"
-        },
-        {
-          "title": "Delinea PCS",
-          "description": "Least privilege e controle de elevação em endpoints.",
-          "logo": "pages/vendors/delinea/favcon-delinea.png"
-        },
-        {
-          "title": "Delinea Lifecycle Management (IGA)",
-          "description": "Governança de Identidade.",
-          "logo": "pages/vendors/delinea/favcon-delinea.png"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "BeyondTrust",
-        "Cyberark",
-        "One Identity"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "SMB",
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "Cloud",
-          "Segurança Defensiva",
-          "Continuidade de Negócios"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Larissa Caetano",
-          "role": "Product Sales Manager",
-          "email": "lcaetano@adistec.com"
-        },
-        {
-          "name": "Augusto Fernandes",
-          "role": "Engineering Sales Specialist",
-          "email": "afernandes@adistec.com"
-        },
-        {
-          "name": "Delinea Brasil Adistec",
-          "role": "",
-          "email": "delineabrasil@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "DocuSign",
-      "slug": "docusign",
-      "logo": "assets/IMG/logos/docusign.png",
-      "summary": "Tudo o que você precisa para fechar um acordo",
-      "tags": [
-        "Electronic Signature",
-        "Digital Signature",
-        "CLM",
-        "Agreement Cloud",
-        "Workflow Automation",
-        "Compliance",
-        "Identity Verification"
-      ],
-      "description": "Fabricante global líder em assinaturas eletrônicas e gestão de acordos digitais, de origem norte-americana, amplamente utilizado em processos corporativos e jurídicos.",
-      "tagline": "",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=alliances&name=docusign",
-      "heroImage": "pages/vendors/docusign/hero-docusign.png",
-      "products": [
-        {
-          "title": "DocuSign eSignature",
-          "description": "Aplicação de least privilege em endpoints, removendo direitos administrativos locais e controlando execução de aplicações.",
-          "logo": "pages/vendors/docusign/favcon-docusign.png"
-        },
-        {
-          "title": "DocuSign IAM",
-          "description": "Acesso seguro via navegador a sistemas e aplicações sensíveis, com isolamento de sessão e proteção de credenciais.",
-          "logo": "pages/vendors/docusign/favcon-docusign.png"
-        },
-        {
-          "title": "DocuSign CLM",
-          "description": "Publicação segura de aplicações internas com controle de acesso, auditoria e sem exposição direta ou VPN tradicional.",
-          "logo": "pages/vendors/docusign/favcon-docusign.png"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Adobe Acrobat Sign",
-        "Dropbox Sign",
-        "Zoho Sign"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "Cloud",
-          "Segurança Defensiva",
-          "Continuidade de Negócios"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Gabriel Scaranello",
-          "role": "Product Sales Manager",
-          "email": "gscaranello@adistec.com"
-        },
-        {
-          "name": "Augusto Fernandes",
-          "role": "Engineering Sales Specialist",
-          "email": "afernandes@adistec.com"
-        },
-        {
-          "name": "Docusign Brasil Adistec",
-          "role": "",
-          "email": "docusignbr@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Elastic",
-      "slug": "elastic",
-      "logo": "assets/IMG/logos/elastic.png",
-      "summary": "Open source search, analytics and AI Platform.",
-      "tags": [
-        "Elasticsearch",
-        "Elastic Stack",
-        "SIEM",
-        "XDR",
-        "Observability",
-        "Observabilidade",
-        "Log Management",
-        "APM",
-        "Search Engine",
-        "Cloud-Native",
-        "Machine Learning"
-      ],
-      "description": "Fabricante global especializado em segurança de aplicações (Application Security / AST),\n            com forte foco em DevSecOps e proteção ao longo de todo o ciclo de desenvolvimento.",
-      "tagline": "",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=alliances&name=elastic",
-      "heroImage": "pages/vendors/elastic/hero-elastic.jpg",
-      "products": [
-        {
-          "title": "Elasticsearch",
-          "description": "Motor de busca e analytics distribuído.",
-          "logo": "pages/vendors/elastic/favcon-elastic.webp"
-        },
-        {
-          "title": "Kibana",
-          "description": "Plataforma Unificada. Visualização, dashboards e análise de dados.",
-          "logo": "pages/vendors/elastic/favcon-elastic.webp"
-        },
-        {
-          "title": "Logstash",
-          "description": "Ingestão e transformação de dados.",
-          "logo": "pages/vendors/elastic/favcon-elastic.webp"
-        },
-        {
-          "title": "Beats / Elastic Agent",
-          "description": "Coleta de logs, métricas e eventos.",
-          "logo": "pages/vendors/elastic/favcon-elastic.webp"
-        },
-        {
-          "title": "Elastic Security",
-          "description": "SIEM e XDR unificados.",
-          "logo": "pages/vendors/elastic/favcon-elastic.webp"
-        },
-        {
-          "title": "Elastic Observability",
-          "description": "APM, logs, métricas e uptime monitoring.",
-          "logo": "pages/vendors/elastic/favcon-elastic.webp"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "Produtos do portfolio Checkmarx, dedicado à análise e identificação de vulnerabilidades em códigos e aplicações.",
-      "productMedia": "",
-      "competitors": [
-        "Splunk",
-        "Datadog",
-        "OpenSearch",
-        "Graylog",
-        "SolarWinds"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "E-commerce"
-        ],
-        "sizes": [
-          "SMB",
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "DevSecOps",
-          "AppSec",
-          "Segurança da Informação",
-          "CISO"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Pedro Barros",
-          "role": "Product Sales Manager",
-          "email": "pbarros@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Fortra",
-      "slug": "fortra",
-      "logo": "assets/IMG/logos/fortra.png",
-      "summary": "Soluções avançadas de segurança ofensiva e defensiva que cobrem toda a cadeia de ataques.",
-      "tags": [
-        "DLP",
-        "CASB",
-        "SWG",
-        "RBI",
-        "Email Security",
-        "Classificação de Dados",
-        "DSPM",
-        "Data Security",
-        "Data Protection",
-        "Cloud DLP",
-        "Data Visibility",
-        "Data Governance",
-        "Data Risk Management",
-        "Data Breach Prevention",
-        "Insider Threat Protection",
-        "Intellectual Property Protection",
-        "Personally Identifiable Information (PII)",
-        "Protected Health Information (PHI)",
-        "Financial Data Protection",
-        "GDPR Compliance",
-        "LGPD Compliance",
-        "HIPAA Compliance",
-        "PCI-DSS Compliance",
-        "Data Mapping",
-        "Data Labeling",
-        "Phishing Protection",
-        "Offensive Security",
-        "Security Automation",
-        "Brand Protection",
-        "Digital Risk Protection",
-        "Cloud Email Security"
-      ],
-      "description": "Fabricante global de cibersegurança, anteriormente conhecido como HelpSystems, com forte foco em proteção de dados, e-mail security, DLP e validação de segurança ofensiva.",
-      "tagline": "Nós quebramos a cadeia de ataques",
-      "heroSubtitle": "Soluções avançadas de segurança ofensiva e defensiva que cobrem toda a cadeia de ataques.",
-      "link": "vendor.html?type=alliances&name=fortra",
-      "heroImage": "pages/vendors/fortra/hero-fortra.png",
-      "products": [
-        {
-          "title": "Digital Guardian DLP",
-          "description": "Plataforma de Data Loss Prevention (DLP) focada em endpoints, rede e cloud, capaz de identificar, monitorar e bloquear tentativas de exfiltração de dados sensíveis.",
-          "logo": "pages/vendors/fortra/favcon-fortra.png"
-        },
-        {
-          "title": "Fortra Email Security",
-          "description": "Plataforma de segurança de e-mail baseada em cloud que utiliza machine learning, threat intelligence e automação de resposta para detectar e remover phishing, malware e ataques BEC que conseguem bypassar controles tradicionais de e-mail.",
-          "logo": "pages/vendors/fortra/favcon-fortra.png"
-        },
-        {
-          "title": "DSPM",
-          "description": "Solução de classificação de dados que permite rotular e categorizar informações sensíveis, ajudando usuários e sistemas a aplicar políticas de proteção adequadas.",
-          "logo": "pages/vendors/fortra/favcon-fortra.png"
-        },
-        {
-          "title": "Cobalt Strike",
-          "description": "Plataforma avançada de adversary simulation e operações de Red Team usada para emular o comportamento de atacantes dentro de um ambiente corporativo. A ferramenta permite simular movimento lateral, persistência, exploração pós-comprometimento e comunicação C2, ajudando equipes de segurança a testar a capacidade de detecção e resposta do SOC.",
-          "logo": "pages/vendors/fortra/favcon-fortra.png"
-        },
-        {
-          "title": "Core Impact",
-          "description": "Core Impact é uma plataforma profissional de penetration testing automatizado e simulação de ataques, usada por equipes de segurança para identificar e explorar vulnerabilidades de forma controlada, replicando as mesmas técnicas utilizadas por atacantes reais.",
-          "logo": "pages/vendors/fortra/favcon-fortra.png"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Proofpoint",
-        "Mimecast",
-        "Microsoft",
-        "Zscaler",
-        "Netskope",
-        "Pentera",
-        "Sophos",
-        "Fortinet"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "E-commerce"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Gabriel Scaranello",
-          "role": "Product Sales Manager",
-          "email": "gscaranello@adistec.com"
-        },
-        {
-          "name": "Felipe Costa",
-          "role": "Engineering Sales Specialist",
-          "email": "fcosta@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "HCL",
-      "slug": "hcl",
-      "logo": "assets/IMG/logos/hcl.png",
-      "summary": "Multinacional de origem indiana, focada em plataformas corporativas de automação, segurança e gestão de TI, \n            com forte presença em ambientes enterprise.",
-      "tags": [
-        "UEM",
-        "MDM",
-        "Endpoint Management",
-        "Patch Management",
-        "Vulnerability Management",
-        "Application Security",
-        "Zero Trust",
-        "SAST",
-        "DAST",
-        "AST",
-        "IT Automation",
-        "Workflow Orchestration",
-        "Compliance",
-        "Risk Management",
-        "IAST",
-        "SCA"
-      ],
-      "description": "Unidade de software da HCLTech, multinacional de origem indiana, focada em plataformas corporativas de automação, segurança e gestão de TI, com forte presença em ambientes enterprise.",
-      "tagline": "Proteja as inovações do futuro com as soluções avançadas de cibersegurança da HCLSoftware.",
-      "heroSubtitle": "Entrega soluções para gestão unificada de endpoints, segurança de aplicações e automação de operações de TI, ajudando organizações a reduzir riscos, padronizar ambientes e aumentar eficiência operacional.",
-      "link": "vendor.html?type=alliances&name=hcl",
-      "heroImage": "pages/vendors/hcl/hero-hcl.png",
-      "products": [
-        {
-          "title": "HCL BigFix",
-          "description": "Gestão unificada de endpoints, patching, compliance e vulnerabilidades em larga escala.",
-          "logo": "pages/vendors/hcl/bigfix.png"
-        },
-        {
-          "title": "HCL AppScan",
-          "description": "Segurança de aplicações com SAST, DAST e IAST para identificação de falhas no ciclo de desenvolvimento.",
-          "logo": "pages/vendors/hcl/appscan.png"
-        },
-        {
-          "title": "HCL Workload Automation (HWA)",
-          "description": "Automação e orquestração de workloads e jobs (incluindo os críticos) em ambientes híbridos.",
-          "logo": "pages/vendors/hcl/favcon-hcl.svg"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Checkmarx",
-        "Veracode",
-        "Synopsys",
-        "Fortify",
-        "Rapid7",
-        "InsightAppSec",
-        "Tanium",
-        "BMC Control-M",
-        "Broadcom Automic Automation",
-        "Stonebranch UAC",
-        "Redwood RunMyJobs",
-        "ActiveBatch",
-        "Rundeck",
-        "Red Hat"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "E-commerce"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "AppSec",
-          "SecOps",
-          "SOC",
-          "CISO",
-          "Infraestrutura",
-          "Compliance"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Renata Neves",
-          "role": "Business Sales Manager",
-          "email": "rneves@adistec.com"
-        },
-        {
-          "name": "Will Arruda",
-          "role": "Product Sales Manager",
-          "email": "warruda@adistec.com"
-        },
-        {
-          "name": "Rafael Moreira",
-          "role": "Product Sales Specialist",
-          "email": "rmoreira@adistec.com"
-        },
-        {
-          "name": "Felipe Costa",
-          "role": "Engineering Sales Specialist",
-          "email": "fcosta@adistec.com"
-        },
-        {
-          "name": "HCL Brasil Adistec",
-          "role": "",
-          "email": "hcl.brasil@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Nozomi",
-      "slug": "nozomi",
-      "logo": "assets/IMG/logos/nozomi.png",
-      "summary": "Protege redes OT, ICS e IoT contra ameaças cibernéticas, oferecendo visibilidade, detecção de ameaças e monitoramento contínuo sem impacto operacional.",
-      "tags": [
-        "GenAI",
-        "Inteligencia Artificial",
-        "Industrial Cybersecurity",
-        "ICS Security",
-        "Operational Technology",
-        "CPS",
-        "Purdue Model",
-        "Network Monitoring",
-        "Anomaly Detection",
-        "Zero Trust for OT",
-        "Critical Infrastructure",
-        "NDR",
-        "SCADA Security",
-        "OT Security",
-        "Asset Discovery",
-        "Asset Inventory",
-        "Asset Visibility",
-        "Vulnerability Identification",
-        "Threat Detection",
-        "Threat Intelligence",
-        "Behavioral Analysis",
-        "PLC Security",
-        "IEC",
-        "NIST",
-        "NERC",
-        "BACnet",
-        "Modbus",
-        "PROFINET",
-        "HMI Monitoring",
-        "Guardian Air",
-        "Wireless OT"
-      ],
-      "description": "Fabricante global especializado em cibersegurança para ambientes industriais (OT/ICS), fundado na Suíça, com forte presença em infraestruturas críticas.",
-      "tagline": "Conheça a solução ciber-resiliente mais completa até o momento.",
-      "heroSubtitle": "Protege redes OT, ICS e IoT contra ameaças cibernéticas, oferecendo visibilidade, detecção de ameaças e monitoramento contínuo sem impacto operacional.",
-      "link": "vendor.html?type=alliances&name=nozomi",
-      "heroImage": "pages/vendors/nozomi/hero-nozomi.jpg",
-      "products": [
-        {
-          "title": "Nozomi Vantage",
-          "description": "Plataforma SaaS para gestão centralizada de inventário, visibilidade, risco, detecção de ameaças e análise em ambientes OT/IoT/IT. Oferece dashboards unificados, análise com IA, vulnerabilidades e risco de ativos globalmente.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi CMC",
-          "description": "Console on-premise para gerenciar sensores Guardian e recursos da plataforma. Visibilidade OT/IoT localmente, fornecendo inventário, monitoramento e detecção de ameaças em múltiplos sites.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi Guardian",
-          "description": "Sensor de rede que realiza descoberta passiva de ativos, mapeamento de rede, monitoramento de protocolos industriais e comunicação, detecção de anomalias e visibilidade OT/IoT.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi Guardian Air",
-          "description": "Sensor de redes sem fio que monitora espectro RF (Wi-Fi, BLE, Zigbee, LoRaWAN, celulares etc.), detecta dispositivos sem fio e ameaças específicas do espectro.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi Arc",
-          "description": "Sensor host-based de endpoint que oferece visibilidade e proteção local, coleta inventário, monitoramento de eventos e pode atuar também como sensor de rede.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi Arc Embedded",
-          "description": "Versão do Arc embutida diretamente em dispositivos ICS/endpoints (ex.: controladores industriais), para visibilidade e detecção mais profunda no nível Purdue 0-1. Mitsubishi e Schneider já possuem equipamentos com o Arc embarcado.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi Threat Intelligence",
-          "description": "Serviço de inteligência contínua que entrega indicadores de compromisso (IOCs), regras YARA/Sigma, vulnerabilidades e TTPs para enriquecer detecção e análise de ameaças OT/IoT.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi Smart Polling",
-          "description": "Complemento ao Guardian que adiciona polling ativo discreto para coletar informações detalhadas de dispositivos sem interromper operações, melhorando inventário e avaliações de risco.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi Asset Intelligence",
-          "description": "Serviço que melhora classificação e identificação de dispositivos, adicionando contexto de vulnerabilidade, versões, recalls e informações detalhadas para visibilidade quase 100% precisa.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        },
-        {
-          "title": "Nozomi Vantage IQ",
-          "description": "Camada de análise com IA dentro do Vantage, priorizando eventos críticos, reduzindo ruído de alertas e guiando analistas com recomendações e insights acionáveis.",
-          "logo": "pages/vendors/nozomi/favcon-nozomi.jpg"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Claroty",
-        "Dragos",
-        "Microsoft"
-      ],
-      "profile": {
-        "segments": [
-          "Indústria",
-          "Energia",
-          "Óleo & Gás",
-          "Governo",
-          "Manufatura",
-          "Transporte",
-          "Infraestrutura"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "OT Security",
-          "Compliance",
-          "Engenheiros de Automação",
-          "Infra OT"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Larissa Caetano",
-          "role": "Product Sales Manager",
-          "email": "lcaetano@adistec.com"
-        },
-        {
-          "name": "Felipe Costa",
-          "role": "Engineering Sales Specialist",
-          "email": "fcosta@adistec.com"
-        },
-        {
-          "name": "Nozomi Brasil Adistec",
-          "role": "",
-          "email": "nozomibrasil@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "One Trust",
-      "slug": "1trust",
-      "logo": "assets/IMG/logos/1trust.png",
-      "summary": "OneTrust é a Plataforma de Governança Preparada para IA™.",
-      "tags": [
-        "Privacy Management",
-        "GRC",
-        "Data Privacy",
-        "LGPD",
-        "GDPR",
-        "Compliance",
-        "Consent Management",
-        "Risk Management",
-        "Third-Party Risk",
-        "Ethics & Compliance",
-        "Governança de Dados",
-        "AI"
-      ],
-      "description": "Fabricante global líder em privacidade, governança e gestão de risco, de origem norte-americana, amplamente reconhecido como referência em Privacy Management e GRC moderno.",
-      "tagline": "Continuous governance for AI",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=alliances&name=1trust",
-      "heroImage": "pages/vendors/1trust/hero-1trust.webp",
-      "products": [
-        {
-          "title": "OneTrust Privacy & Data Governance",
-          "description": "Gestão de privacidade, inventário de dados e conformidade regulatória.",
-          "logo": "pages/vendors/1trust/favcon-1trust.ico"
-        },
-        {
-          "title": "OneTrust Consent & Preferences",
-          "description": "Gestão de consentimento e cookies.",
-          "logo": "pages/vendors/1trust/favcon-1trust.ico"
-        },
-        {
-          "title": "OneTrust GRC & Risk",
-          "description": "Governança, risco e compliance integrados.",
-          "logo": "pages/vendors/1trust/favcon-1trust.ico"
-        },
-        {
-          "title": "OneTrust Third-Party Risk Management (TPRM)",
-          "description": "Avaliação e monitoramento de riscos de terceiros.",
-          "logo": "pages/vendors/1trust/favcon-1trust.ico"
-        },
-        {
-          "title": "OneTrust AI Governance",
-          "description": "Governança do uso de IA, com inventário de modelos, avaliação de riscos, controles éticos, compliance regulatório (ex: AI Act) e monitoramento contínuo.",
-          "logo": "pages/vendors/1trust/favcon-1trust.ico"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "TrustArc",
-        "SAI360",
-        "RSA Archer",
-        "ServiceNow GRC",
-        "Privace Tools"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "DPO",
-          "Jurídico",
-          "Cloud",
-          "Risco Corporativo",
-          "Continuidade de Negócios"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Gabriel Scaranello",
-          "role": "Product Sales Manager",
-          "email": "gscaranello@adistec.com"
-        },
-        {
-          "name": "One Trust Brasil Adistec",
-          "role": "",
-          "email": "onetrustbr@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Pentera",
-      "slug": "pentera",
-      "logo": "assets/IMG/logos/pentera.png",
-      "summary": "Reduza sua exposição com a validação de segurança baseada em IA™.",
-      "tags": [
-        "Vulnerability Management",
-        "Exposure Management",
-        "Attack Surface Management",
-        "CVE",
-        "Risk-Based Prioritization",
-        "Cloud Security",
-        "OT Security",
-        "Compliance",
-        "CNAPP",
-        "DAST",
-        "CTEM",
-        "IAM",
-        "Red Team",
-        "Segurança Ofensiva"
-      ],
-      "description": "Fabricante global especializado em validação contínua de segurança (Breach and Attack Simulation – BAS), de origem israelense, focado em testes de segurança automatizados e realistas.",
-      "tagline": "",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=alliances&name=pentera",
-      "heroImage": "pages/vendors/pentera/hero-pentera.webp",
-      "products": [
-        {
-          "title": "Pentera Core",
-          "description": "Simulação automatizada de ataques em ambientes internos.",
-          "logo": "pages/vendors/pentera/favcon-pentera.png"
-        },
-        {
-          "title": "Pentera Surface",
-          "description": "Validação da superfície de ataque externa.",
-          "logo": "pages/vendors/pentera/favcon-pentera.png"
-        },
-        {
-          "title": "Pentera Cloud",
-          "description": "Testes de segurança em ambientes cloud.",
-          "logo": "pages/vendors/pentera/favcon-pentera.png"
-        },
-        {
-          "title": "Pentera PCI",
-          "description": "Validação contínua de controles para PCI DSS.",
-          "logo": "pages/vendors/pentera/favcon-pentera.png"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Ridge",
-        "AttackIQ"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "E-commerce"
-        ],
-        "sizes": [
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Compliance",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "SecOps",
-          "SOC",
-          "GRC",
-          "Blue Team"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Anderson Nascarella",
-          "role": "Business Sales Manager",
-          "email": "anascarella@adistec.com"
-        },
-        {
-          "name": "Marcus Pedrosa",
-          "role": "Engineering Sales Specialist",
-          "email": "msilva@adistec.com"
-        }
-      ]
-    },
-    {
-      "name": "Progress",
-      "slug": "progress",
-      "logo": "assets/IMG/logos/progress.png",
-      "summary": "Fornece plataformas para desenvolvimento, execução, integração e proteção de aplicações e dados, ajudando organizações a manter ambientes críticos estáveis, seguros e altamente disponíveis.",
-      "tags": [
-        "Application Development",
-        "Middleware",
-        "Managed File Transfer",
-        "Data Integration",
-        "Network Monitoring",
-        "Infrastructure Management",
-        "SecOps",
-        "NDR",
-        "Load Balance",
-        "DevOps",
-        "Banco de Dados"
-      ],
-      "description": "Fabricante global de software corporativo, de origem norte-americana, focado em desenvolvimento de aplicações, integração, gestão de dados e segurança de infraestrutura.",
-      "tagline": "Libere o poder da IA para o seu negócio",
-      "heroSubtitle": "Fornece plataformas para desenvolvimento, execução, integração e proteção de aplicações e dados, ajudando organizações a manter ambientes críticos estáveis, seguros e altamente disponíveis.",
-      "link": "vendor.html?type=alliances&name=progress",
-      "heroImage": "pages/vendors/progress/hero-progress.webp",
-      "products": [
-        {
-          "title": "MOVEit",
-          "description": "Transferência segura e gerenciada de arquivos (MFT).",
-          "logo": "pages/vendors/progress/favcon-progress.png"
-        },
-        {
-          "title": "WhatsUp Gold",
-          "description": "Monitoramento de redes e infraestrutura.",
-          "logo": "pages/vendors/progress/favcon-progress.png"
-        },
-        {
-          "title": "Kemp LoadMaster",
-          "description": "Load balancer e Application Delivery Controller (ADC).",
-          "logo": "pages/vendors/progress/favcon-progress.png"
-        },
-        {
-          "title": "Progress OpenEdge",
-          "description": "Plataforma de desenvolvimento e banco de dados.",
-          "logo": "pages/vendors/progress/favcon-progress.png"
-        },
-        {
-          "title": "Progress Telerik / Kendo UI",
-          "description": "Componentes para desenvolvimento de aplicações.",
-          "logo": "pages/vendors/progress/favcon-progress.png"
-        },
-        {
-          "title": "Progress Flowmon",
-          "description": "Network Detection and Response (NDR) e análise de tráfego para visibilidade de rede e detecção de ameaças.",
-          "logo": "pages/vendors/progress/favcon-progress.png"
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [
-        "Fortra (GoAnywhere)",
-        "SolarWinds",
-        "IBM",
-        "F5",
-        "Broadcom"
-      ],
-      "profile": {
-        "segments": [
-          "Tecnologia",
-          "Financeiro",
-          "Saúde",
-          "Governo",
-          "Educação"
-        ],
-        "sizes": [
-          "SMB",
-          "Medium Business",
-          "Enterprise"
-        ],
-        "roles": [
-          "CISO",
-          "Desenvolvimento",
-          "Segurança da Informação",
-          "Infraestrutura",
-          "Network Security",
-          "SecOps",
-          "DevOps"
-        ]
-      },
-      "contacts": [
-        {
-          "name": "Renata Neves",
-          "role": "Business Sales Manager",
-          "email": "rneves@adistec.com"
-        },
-        {
-          "name": "Will Arruda",
-          "role": "Product Sales Manager",
-          "email": "warruda@adistec.com"
-        },
-        {
-          "name": "Gabriel Lima",
-          "role": "Product Sales Specialist",
-          "email": "glima@adistec.com"
-        },
-        {
-          "name": "Progress Brasil Adistec",
-          "role": "",
-          "email": "progressbr@adistec.com"
-        }
+      "aliases": [
+        "Sentinel One"
       ]
     },
     {
@@ -2598,7 +1971,7 @@
       "description": "Fabricante global de software de monitoramento e gestão de TI, de origem norte-americana, amplamente utilizado em ambientes corporativos para observabilidade e administração de infraestrutura.",
       "tagline": "The Future of IT Has Arrived.",
       "heroSubtitle": "Fornece visibilidade, monitoramento e troubleshooting de ambientes de TI, permitindo identificar rapidamente falhas, degradação de desempenho e indisponibilidades em redes, servidores, aplicações e bancos de dados.",
-      "link": "vendor.html?type=alliances&name=solarwinds",
+      "link": "vendor.html?type=security&name=solarwinds",
       "heroImage": "pages/vendors/solarwinds/hero-solarwinds.webp",
       "products": [
         {
@@ -2711,51 +2084,67 @@
           "email": "solarwindsbrasil@adistec.com"
         }
       ]
-    }
-  ],
-  "datacenter": [
+    },
     {
-      "name": "VMware",
-      "slug": "vmware",
-      "logo": "assets/IMG/logos/vmware.svg",
-      "summary": "Nuvem privada padronizada: operação simples, segura e automatizada.",
+      "name": "Tenable",
+      "slug": "tenable",
+      "logo": "assets/IMG/logos/tenable.png",
+      "summary": "Identifica, avalia e prioriza vulnerabilidades, falhas de configuração e riscos de exposição em ambientes on-premises, cloud, OT e aplicações, apoiando decisões de redução de risco baseada em contexto.",
       "tags": [
-        "Private Cloud Platform",
-        "SDDC",
-        "Software-Defined Data Center",
-        "Server Virtualization",
-        "Hyperconverged Infrastructure",
-        "HCI",
-        "Software-Defined Storage",
-        "SDS",
-        "Network Virtualization",
-        "Microsegmentation",
-        "Data Center Security",
-        "Cloud Management",
-        "Operations (Observability)",
-        "Infrastructure Automation",
-        "Kubernetes Platform",
-        "Modern Apps",
-        "DR Orchestration",
-        "Disaster Recovery",
-        "Workload Mobility",
-        "Workload Migration"
+        "Vulnerability Management",
+        "Exposure Management",
+        "Attack Surface Management",
+        "CVE",
+        "Risk-Based Prioritization",
+        "Cloud Security",
+        "OT Security",
+        "Compliance",
+        "CNAPP",
+        "DAST",
+        "CTEM",
+        "Gerenciamento de Risco",
+        "IAM"
       ],
-      "description": "A VMware entrega uma plataforma de Private Cloud / SDDC e virtualização com governança e automação, estruturada principalmente em bundles",
-      "tagline": "Nuvem privada padronizada: operação simples, segura e automatizada.",
-      "heroSubtitle": "",
-      "link": "vendor.html?type=datacenter&name=vmware",
-      "heroImage": "pages/vendors/vmware/hero-vm.jpg",
+      "description": "Fabricante global especializado em gestão de vulnerabilidades e exposição cibernética, de origem norte-americana, amplamente reconhecido pelo Nessus.",
+      "tagline": "Reduza os riscos cibernéticos que impactam os negócios com o Tenable One.",
+      "heroSubtitle": "Identifica, avalia e prioriza vulnerabilidades, falhas de configuração e riscos de exposição em ambientes on-premises, cloud, \n        OT e aplicações, apoiando decisões de redução de risco baseada em contexto.",
+      "link": "vendor.html?type=security&name=tenable",
+      "heroImage": "pages/vendors/tenable/hero-tenable.webp",
       "products": [
         {
-          "title": "VMware Cloud Foundation (VCF)",
-          "description": "Bundle de plataforma de nuvem privada. Inclui componentes como vSphere/vCenter, vSAN, NSX e operações/automação.",
-          "logo": "pages/vendors/vmware/favcon-vm.webp"
+          "title": "Tenable Nessus",
+          "description": "Scanner de vulnerabilidades amplamente utilizado no mercado.",
+          "logo": "pages/vendors/tenable/cards.svg"
         },
         {
-          "title": "VMware vSphere Foundation (VVF)",
-          "description": "Bundle vendido como um único produto. Inclui o vSphere vCenter e Operations.",
-          "logo": "pages/vendors/vmware/favcon-vm.webp"
+          "title": "Tenable.SC / Tenable.VM",
+          "description": "Gestão centralizada de vulnerabilidades para ambientes enterprise cloud / on-prem.",
+          "logo": "pages/vendors/tenable/cards.svg"
+        },
+        {
+          "title": "Tenable.OT",
+          "description": "Visibilidade e avaliação de riscos em ambientes OT/ICS.",
+          "logo": "pages/vendors/tenable/cards.svg"
+        },
+        {
+          "title": "Tenable Cloud Security",
+          "description": "Segurança e postura de ambientes em nuvem.",
+          "logo": "pages/vendors/tenable/cards.svg"
+        },
+        {
+          "title": "Tenable Identity Exposure",
+          "description": "Vulnerabilidades e exposures no AD e Entra ID.",
+          "logo": "pages/vendors/tenable/cards.svg"
+        },
+        {
+          "title": "Tenable Attack Surface Management",
+          "description": "Descoberta de ativos expostos na internet do domínio.",
+          "logo": "pages/vendors/tenable/cards.svg"
+        },
+        {
+          "title": "Tenable Identity Exposure",
+          "description": "Vulnerabilidades e exposures no AD e Entra ID.",
+          "logo": "pages/vendors/tenable/cards.svg"
         }
       ],
       "productSectionTitle": "Principais Produtos",
@@ -2763,13 +2152,215 @@
       "productSectionNote": "",
       "productMedia": "",
       "competitors": [
-        "Nutanix",
+        "Qualys",
+        "Rapid7",
+        "Wiz",
         "Microsoft",
-        "Red Hat",
-        "OpenStack (distribuições/vendors)",
-        "Proxmox",
+        "Beyond Trust",
         "Cisco",
-        "Illumio (microsegmentação)"
+        "Fortinet"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "E-commerce"
+        ],
+        "sizes": [
+          "SMB",
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "CISO",
+          "Compliance",
+          "Segurança da Informação",
+          "Infraestrutura",
+          "SecOps",
+          "SOC",
+          "GRC",
+          "Blue Team"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Jefferson Silva",
+          "role": "Product Sales Manager",
+          "email": "jsilva@adistec.com"
+        },
+        {
+          "name": "Rafael Moreira",
+          "role": "Product Sales Specialist",
+          "email": "rmoreira@adistec.com"
+        },
+        {
+          "name": "Marcus Pedrosa",
+          "role": "Engineering Sales Specialist",
+          "email": "msilva@adistec.com"
+        },
+        {
+          "name": "Tenable Brasil Adistec",
+          "role": "",
+          "email": "tenable_pl_br@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "Thales",
+      "slug": "thales",
+      "logo": "assets/IMG/logos/thales.png",
+      "summary": "Grupo global de tecnologia, de origem francesa, com forte atuação em defesa, aeroespacial e cibersegurança, sendo referência em proteção de dados e criptografia.",
+      "tags": [
+        "Data Encryption",
+        "HSM",
+        "Key Management",
+        "IAM",
+        "Tokenization",
+        "Cloud Security",
+        "PKI",
+        "Compliance",
+        "Zero Trust",
+        "Mascaramento de Dados",
+        "Data Protection"
+      ],
+      "description": "Fabricante global especializado em gestão de vulnerabilidades e exposição cibernética, de origem norte-americana, amplamente reconhecido pelo Nessus.",
+      "tagline": "Building a future we can all trust.",
+      "heroSubtitle": "Protege dados sensíveis, identidades e aplicações por meio de criptografia, gestão de chaves, HSM e controle de acessos, garantindo confidencialidade e conformidade em ambientes on-premises, cloud e híbridos.",
+      "link": "vendor.html?type=security&name=thales",
+      "heroImage": "pages/vendors/thales/hero-thales.webp",
+      "products": [
+        {
+          "title": "Thales CipherTrust Transparent Encryption",
+          "description": "Plataforma unificada de criptografia e gestão de acesso.",
+          "logo": "pages/vendors/thales/favcon-thales.png"
+        },
+        {
+          "title": "Thales Luna HSM",
+          "description": "Hardware Security Modules para proteção de chaves criptográficas.",
+          "logo": "pages/vendors/thales/favcon-thales.png"
+        },
+        {
+          "title": "Thales Ciphertrust Tokenization",
+          "description": "Embaralhamento de conteúdo de banco de dados.",
+          "logo": "pages/vendors/thales/favcon-thales.png"
+        },
+        {
+          "title": "Thales Ciphertrust Secrets Management",
+          "description": "Gerenciamento de chaves, certificados.",
+          "logo": "pages/vendors/thales/favcon-thales.png"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "Entrust",
+        "Fortanix",
+        "IBM",
+        "Utimaco"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "E-commerce"
+        ],
+        "sizes": [
+          "SMB",
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "CISO",
+          "Compliance",
+          "Segurança da Informação",
+          "Infraestrutura",
+          "SecOps",
+          "SOC",
+          "GRC",
+          "Blue Team"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Jefferson Silva",
+          "role": "Product Sales Manager",
+          "email": "jsilva@adistec.com"
+        },
+        {
+          "name": "Rafael Moreira",
+          "role": "Product Sales Specialist",
+          "email": "rmoreira@adistec.com"
+        },
+        {
+          "name": "Marcus Pedrosa",
+          "role": "Engineering Sales Specialist",
+          "email": "msilva@adistec.com"
+        },
+        {
+          "name": "Thales Brasil Adistec",
+          "role": "",
+          "email": "thalesbrasil@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "Veeam",
+      "slug": "veeam",
+      "logo": "assets/IMG/logos/veeam.png",
+      "summary": "Garante disponibilidade, integridade,  recuperação e orquestração de dados e workloads, protegendo contra falhas, erros humanos, ataques de ransomware e desastres, com SLAs claros de RPO/RTO.",
+      "tags": [
+        "Backup & Recovery",
+        "Data Resilience",
+        "Ransomware Protection",
+        "DRaaS",
+        "Immutable Backup",
+        "Business Continuity",
+        "Microsoft 365",
+        "Compliance",
+        "Data Freedom"
+      ],
+      "description": "Fabricante global especializado em Data Protection e Resiliência de Dados, focado em backup, recuperação e continuidade de \n          negócios para ambientes híbridos e multi-cloud.",
+      "tagline": "Conheça a solução ciber-resiliente mais completa até o momento.",
+      "heroSubtitle": "Garante disponibilidade, integridade,  recuperação e orquestração de dados e workloads, protegendo contra falhas, erros humanos, \n        ataques de ransomware e desastres, com SLAs claros de RPO/RTO.",
+      "link": "vendor.html?type=security&name=veeam",
+      "heroImage": "pages/vendors/veeam/hero-veeam.webp",
+      "products": [
+        {
+          "title": "Veeam Data Platform (VBR)",
+          "description": "Plataforma de segurança de backup e recuperação para ambientes virtuais, físicos e cloud.",
+          "logo": "pages/vendors/veeam/favcon-veeam.jpg"
+        },
+        {
+          "title": "Veeam Data Cloud",
+          "description": "Proteção de dados em nuvem para M365 (Exchange, OneDrive, SharePoint, Teams), Vault (armazenamento em nuvem sem custo adicional), EntraID, Azure, Salesforce e AWS.",
+          "logo": "pages/vendors/veeam/favcon-veeam.jpg"
+        },
+        {
+          "title": "Veeam Cloud Connect",
+          "description": "Backup e DR em cloud para prestadores de serviço (Service Provider).",
+          "logo": "pages/vendors/veeam/favcon-veeam.jpg"
+        },
+        {
+          "title": "Veeam Cyber Secure",
+          "description": "Recursos avançados de proteção contra ransomware (imutable backups, threat detection).",
+          "logo": "pages/vendors/veeam/favcon-veeam.jpg"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "Commvault",
+        "Cohesity",
+        "Acronis",
+        "Dell Data Protection"
       ],
       "profile": {
         "segments": [
@@ -2797,42 +2388,141 @@
       },
       "contacts": [
         {
-          "name": "Vanessa Moraes",
+          "name": "Renata Neves",
           "role": "Business Sales Manager",
-          "email": "vmoraes@adistec.com"
+          "email": "rneves@adistec.com"
         },
         {
-          "name": "Thalia Souza",
+          "name": "Carlos Nascimento",
           "role": "Product Sales Specialist",
-          "email": "tsouza@adistec.com"
+          "email": "cnascimento@adistec.com"
         },
         {
-          "name": "Gabriela Brito",
+          "name": "Marcilio Santana",
           "role": "Product Sales Specialist",
-          "email": "gbrito@adistec.com"
+          "email": "msantana@adistec.com"
         },
         {
-          "name": "Fernanda Correia",
+          "name": "Barbara Santos",
           "role": "Product Sales Specialist",
-          "email": "fcorreia@adistec.com"
+          "email": "bsantos@adistec.com"
         },
         {
-          "name": "Ana Rusilas",
-          "role": "Product Sales Specialist",
-          "email": "arusilas@adistec.com"
-        },
-        {
-          "name": "Antonio Lolegi",
+          "name": "Andre Dias",
           "role": "Engineering Sales Specialist",
-          "email": "alolegi@adistec.com"
+          "email": "adias@adistec.com"
         },
         {
-          "name": "VMware Brasil Adistec",
+          "name": "Veeam Brasil Adistec",
           "role": "",
-          "email": "vmwarebrasil@adistec.com"
+          "email": "veeambrasil@adistec.com"
         }
       ]
     },
+    {
+      "name": "Zscaler",
+      "slug": "zscaler",
+      "logo": "assets/IMG/logos/zscaler.svg",
+      "summary": "Protege acesso de usuários, aplicações e dados eliminando a necessidade de VPNs tradicionais, aplicando Zero Trust para acesso à internet e aplicações privadas, com inspeção de tráfego em escala global.",
+      "tags": [
+        "SASE",
+        "SSE",
+        "ZTNA",
+        "SWG",
+        "CASB",
+        "CDR",
+        "RBI",
+        "DLP",
+        "Cloud Security",
+        "Classificação de Dados",
+        "Zero Trust"
+      ],
+      "description": "Fabricante global líder em segurança cloud-native, pioneiro no modelo Secure Access Service Edge (SASE) e Zero Trust, com plataforma 100% SaaS e presença global.",
+      "tagline": "Libere o poder do zero trust + IA",
+      "heroSubtitle": "Protege acesso de usuários, aplicações e dados eliminando a necessidade de VPNs tradicionais, aplicando Zero Trust para acesso à internet e aplicações privadas,\n         com inspeção de tráfego em escala global.",
+      "link": "vendor.html?type=security&name=zscaler",
+      "heroImage": "pages/vendors/zscaler/hero-zscaler.jpg",
+      "products": [
+        {
+          "title": "Zscaler Internet Access (ZIA)",
+          "description": "Segurança de acesso à internet (SWG, CASB, DLP, firewall cloud).",
+          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
+        },
+        {
+          "title": "Zscaler Private Access (ZPA)",
+          "description": "Acesso Zero Trust a aplicações privadas (ZTNA).",
+          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
+        },
+        {
+          "title": "Zscaler Digital Experience (ZDX)",
+          "description": "Monitoramento da experiência digital do usuário.",
+          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
+        },
+        {
+          "title": "Zscaler Data Protection",
+          "description": "Proteção de dados em trânsito e em cloud.",
+          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
+        },
+        {
+          "title": "Zscaler Secure AI",
+          "description": "Governança e proteção do uso de IA, aplicando Zero Trust e DLP para evitar vazamento de dados e riscos em aplicações de IA generativa.",
+          "logo": "pages/vendors/zscaler/favcon-zscaler.png"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "Palo Alto Networks",
+        "Broadcom",
+        "Microsoft",
+        "Cloudflare",
+        "Netskope",
+        "Cato Networks"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "Educação"
+        ],
+        "sizes": [
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "CISO",
+          "Compliance",
+          "Segurança da Informação",
+          "Infraestrutura",
+          "Network Security",
+          "SecOps",
+          "Network"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Lucas Ferreira",
+          "role": "Product Sales Manager",
+          "email": "lferreira@adistec.com"
+        },
+        {
+          "name": "Ingrid Lima",
+          "role": "Product Sales Specialist",
+          "email": "ilima@adistec.com"
+        },
+        {
+          "name": "Felipe Costa",
+          "role": "Engineering Sales Specialist",
+          "email": "fcosta@adistec.com"
+        }
+      ]
+    }
+  ],
+  "datacenter": [
     {
       "name": "Arctera",
       "slug": "arctera",
@@ -2953,6 +2643,61 @@
           "email": "arcterabr@adistec.com"
         }
       ]
+    },
+    {
+      "name": "Arista",
+      "slug": "arista",
+      "logo": "assets/IMG/logos/arista-typographic.svg",
+      "summary": "Infraestrutura de redes de data center e nuvem com switching de alto desempenho, automação e visibilidade.",
+      "tags": [
+        "Data Center Networking",
+        "Switching",
+        "EOS",
+        "CloudVision",
+        "Network Automation",
+        "Telemetry",
+        "Leaf-Spine"
+      ],
+      "description": "Infraestrutura de redes de data center e nuvem com switching de alto desempenho, automação e visibilidade.",
+      "tagline": "",
+      "heroSubtitle": "Infraestrutura de redes de data center e nuvem com switching de alto desempenho, automação e visibilidade.",
+      "link": "vendor.html?type=datacenter&name=arista",
+      "heroImage": "",
+      "products": [
+        {
+          "title": "Arista EOS",
+          "description": "Sistema operacional de rede programável para switches e ambientes de nuvem.",
+          "logo": ""
+        },
+        {
+          "title": "Arista CloudVision",
+          "description": "Plataforma de gestão, automação e telemetria de redes.",
+          "logo": ""
+        },
+        {
+          "title": "Arista 7800R Series",
+          "description": "Plataformas de roteamento e switching de alta capacidade para data centers.",
+          "logo": ""
+        },
+        {
+          "title": "Arista 7050X Series",
+          "description": "Switches para arquiteturas leaf-spine e conectividade de alta velocidade.",
+          "logo": ""
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [],
+      "profile": {
+        "segments": [],
+        "sizes": [],
+        "roles": []
+      },
+      "contacts": [],
+      "sourceUrl": "https://www.arista.com/en/products",
+      "dataStatus": "Informações de portfólio de produto verificadas em fonte oficial; contatos, concorrentes e perfil não cadastrados."
     },
     {
       "name": "Cohesity",
@@ -3774,6 +3519,61 @@
       ]
     },
     {
+      "name": "Quantum",
+      "slug": "quantum",
+      "logo": "assets/IMG/logos/quantum-typographic.svg",
+      "summary": "Armazenamento, proteção e arquivamento de dados não estruturados, com foco em desempenho e retenção.",
+      "tags": [
+        "Object Storage",
+        "Tape Backup",
+        "Archive",
+        "Data Protection",
+        "File System",
+        "Unstructured Data",
+        "Storage"
+      ],
+      "description": "Armazenamento, proteção e arquivamento de dados não estruturados, com foco em desempenho e retenção.",
+      "tagline": "",
+      "heroSubtitle": "Armazenamento, proteção e arquivamento de dados não estruturados, com foco em desempenho e retenção.",
+      "link": "vendor.html?type=datacenter&name=quantum",
+      "heroImage": "",
+      "products": [
+        {
+          "title": "StorNext",
+          "description": "Sistema de arquivos para fluxos de trabalho intensivos em dados.",
+          "logo": ""
+        },
+        {
+          "title": "ActiveScale",
+          "description": "Plataforma de armazenamento de objetos para dados não estruturados.",
+          "logo": ""
+        },
+        {
+          "title": "Scalar Tape Libraries",
+          "description": "Bibliotecas de fita para retenção e arquivamento de longo prazo.",
+          "logo": ""
+        },
+        {
+          "title": "DXi Backup Appliances",
+          "description": "Appliances de armazenamento para backup e recuperação.",
+          "logo": ""
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [],
+      "profile": {
+        "segments": [],
+        "sizes": [],
+        "roles": []
+      },
+      "contacts": [],
+      "sourceUrl": "https://www.quantum.com/en/",
+      "dataStatus": "Informações de portfólio de produto verificadas em fonte oficial; contatos, concorrentes e perfil não cadastrados."
+    },
+    {
       "name": "Riverbed",
       "slug": "riverbed",
       "logo": "assets/IMG/logos/riverbed.png",
@@ -3895,6 +3695,180 @@
           "name": "Luana Lima",
           "role": "Product Sales Specialist",
           "email": "llima@adistec.com"
+        }
+      ]
+    },
+    {
+      "name": "Supermicro",
+      "slug": "supermicro",
+      "logo": "assets/IMG/logos/supermicro-typographic.svg",
+      "summary": "Servidores, sistemas para IA e infraestrutura de armazenamento de alto desempenho para data centers.",
+      "tags": [
+        "Servers",
+        "GPU",
+        "AI Infrastructure",
+        "SuperStorage",
+        "Rack Servers",
+        "High Performance Computing",
+        "Storage"
+      ],
+      "description": "Servidores, sistemas para IA e infraestrutura de armazenamento de alto desempenho para data centers.",
+      "tagline": "",
+      "heroSubtitle": "Servidores, sistemas para IA e infraestrutura de armazenamento de alto desempenho para data centers.",
+      "link": "vendor.html?type=datacenter&name=supermicro",
+      "heroImage": "",
+      "products": [
+        {
+          "title": "SuperServer",
+          "description": "Servidores corporativos para diferentes cargas de trabalho e formatos de implantação.",
+          "logo": ""
+        },
+        {
+          "title": "GPU Systems",
+          "description": "Plataformas de servidores com aceleração GPU para inteligência artificial e HPC.",
+          "logo": ""
+        },
+        {
+          "title": "SuperStorage",
+          "description": "Servidores de armazenamento escaláveis para ambientes corporativos.",
+          "logo": ""
+        },
+        {
+          "title": "MicroCloud",
+          "description": "Arquiteturas de servidores compactos e de alta densidade para data centers.",
+          "logo": ""
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [],
+      "profile": {
+        "segments": [],
+        "sizes": [],
+        "roles": []
+      },
+      "contacts": [],
+      "sourceUrl": "https://www.supermicro.com/en/about/sitemap",
+      "dataStatus": "Informações de portfólio de produto verificadas em fonte oficial; contatos, concorrentes e perfil não cadastrados."
+    },
+    {
+      "name": "VMware",
+      "slug": "vmware",
+      "logo": "assets/IMG/logos/vmware.svg",
+      "summary": "Nuvem privada padronizada: operação simples, segura e automatizada.",
+      "tags": [
+        "Private Cloud Platform",
+        "SDDC",
+        "Software-Defined Data Center",
+        "Server Virtualization",
+        "Hyperconverged Infrastructure",
+        "HCI",
+        "Software-Defined Storage",
+        "SDS",
+        "Network Virtualization",
+        "Microsegmentation",
+        "Data Center Security",
+        "Cloud Management",
+        "Operations (Observability)",
+        "Infrastructure Automation",
+        "Kubernetes Platform",
+        "Modern Apps",
+        "DR Orchestration",
+        "Disaster Recovery",
+        "Workload Mobility",
+        "Workload Migration"
+      ],
+      "description": "A VMware entrega uma plataforma de Private Cloud / SDDC e virtualização com governança e automação, estruturada principalmente em bundles",
+      "tagline": "Nuvem privada padronizada: operação simples, segura e automatizada.",
+      "heroSubtitle": "",
+      "link": "vendor.html?type=datacenter&name=vmware",
+      "heroImage": "pages/vendors/vmware/hero-vm.jpg",
+      "products": [
+        {
+          "title": "VMware Cloud Foundation (VCF)",
+          "description": "Bundle de plataforma de nuvem privada. Inclui componentes como vSphere/vCenter, vSAN, NSX e operações/automação.",
+          "logo": "pages/vendors/vmware/favcon-vm.webp"
+        },
+        {
+          "title": "VMware vSphere Foundation (VVF)",
+          "description": "Bundle vendido como um único produto. Inclui o vSphere vCenter e Operations.",
+          "logo": "pages/vendors/vmware/favcon-vm.webp"
+        }
+      ],
+      "productSectionTitle": "Principais Produtos",
+      "productSectionSubtitle": "",
+      "productSectionNote": "",
+      "productMedia": "",
+      "competitors": [
+        "Nutanix",
+        "Microsoft",
+        "Red Hat",
+        "OpenStack (distribuições/vendors)",
+        "Proxmox",
+        "Cisco",
+        "Illumio (microsegmentação)"
+      ],
+      "profile": {
+        "segments": [
+          "Tecnologia",
+          "Financeiro",
+          "Saúde",
+          "Governo",
+          "Educação"
+        ],
+        "sizes": [
+          "SMB",
+          "Medium Business",
+          "Enterprise"
+        ],
+        "roles": [
+          "CISO",
+          "Compliance",
+          "Segurança da Informação",
+          "Infraestrutura",
+          "SecOps",
+          "Cloud",
+          "Backup",
+          "Continuidade de Negócios"
+        ]
+      },
+      "contacts": [
+        {
+          "name": "Vanessa Moraes",
+          "role": "Business Sales Manager",
+          "email": "vmoraes@adistec.com"
+        },
+        {
+          "name": "Thalia Souza",
+          "role": "Product Sales Specialist",
+          "email": "tsouza@adistec.com"
+        },
+        {
+          "name": "Gabriela Brito",
+          "role": "Product Sales Specialist",
+          "email": "gbrito@adistec.com"
+        },
+        {
+          "name": "Fernanda Correia",
+          "role": "Product Sales Specialist",
+          "email": "fcorreia@adistec.com"
+        },
+        {
+          "name": "Ana Rusilas",
+          "role": "Product Sales Specialist",
+          "email": "arusilas@adistec.com"
+        },
+        {
+          "name": "Antonio Lolegi",
+          "role": "Engineering Sales Specialist",
+          "email": "alolegi@adistec.com"
+        },
+        {
+          "name": "VMware Brasil Adistec",
+          "role": "",
+          "email": "vmwarebrasil@adistec.com"
         }
       ]
     }

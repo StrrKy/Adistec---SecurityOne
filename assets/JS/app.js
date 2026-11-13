@@ -2,7 +2,7 @@
 (async function () {
   'use strict';
   const { $, loadData, vendorsFor, mountGrid, el, emptyState } = window.Adistec;
-  const sections = ['security', 'alliances', 'datacenter'];
+  const sections = ['security', 'datacenter'];
   try {
     const data = await loadData();
     let totalVendors = 0;
@@ -16,7 +16,7 @@
       if (type === 'security') {
         mountGrid($('#security-grid'), items.slice(0,3), type, items.length > 0);
       } else {
-        mountGrid($('#' + type + '-grid'), items.slice(0,2), type, false);
+        mountGrid($('#' + type + '-grid'), items.slice(0,3), type, false);
       }
     });
     $('#metric-vendors').textContent = String(totalVendors).padStart(2,'0');

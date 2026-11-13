@@ -3,7 +3,8 @@
   'use strict';
   const { $, el, SECTION_META, vendorsFor, loadData, mountGrid, emptyState, setActiveSection } = window.Adistec;
   const typeParam = new URLSearchParams(location.search).get('type') || 'security';
-  const type = Object.prototype.hasOwnProperty.call(SECTION_META, typeParam) ? typeParam : 'security';
+  // Legacy type=alliances remains a supported inbound URL, but is no longer a separate category.
+  const type = typeParam === 'alliances' ? 'security' : (Object.prototype.hasOwnProperty.call(SECTION_META, typeParam) ? typeParam : 'security');
   const meta = SECTION_META[type];
   let items = [];
   let activeTags = new Set();
@@ -31,7 +32,7 @@
   }
   function filterItems() {
     const result = items.filter(item => {
-      const matchesQuery = !vendorQuery || [item.name, item.summary, item.description, item.tagline, ...(Array.isArray(item.tags)?item.tags:[]), ...(Array.isArray(item.products)?item.products.flatMap(p => [p.title, p.description]):[])].some(field => normalize(field).includes(vendorQuery));
+      const matchesQuery = !vendorQuery || [item.name, ...(Array.isArray(item.aliases)?item.aliases:[]), item.summary, item.description, item.tagline, ...(Array.isArray(item.tags)?item.tags:[]), ...(Array.isArray(item.products)?item.products.flatMap(p => [p.title, p.description]):[])].some(field => normalize(field).includes(vendorQuery));
       const matchesTag = !activeTags.size || (Array.isArray(item.tags) && item.tags.some(tag => activeTags.has(tag)));
       return matchesQuery && matchesTag;
     });

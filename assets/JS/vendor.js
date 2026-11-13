@@ -4,7 +4,8 @@
   const { $, el, SECTION_META, vendorsFor, loadData, addImage, vendorHref, setActiveSection } = window.Adistec;
   const search = new URLSearchParams(location.search);
   const typeParam = search.get('type') || 'security';
-  const type = Object.prototype.hasOwnProperty.call(SECTION_META,typeParam) ? typeParam : 'security';
+  // Legacy type=alliances remains a supported inbound URL, but is no longer a separate category.
+  const type = typeParam === 'alliances' ? 'security' : (Object.prototype.hasOwnProperty.call(SECTION_META, typeParam) ? typeParam : 'security');
   const requestedName = (search.get('name') || '').trim().toLocaleLowerCase('pt-BR');
   const backHref = './section.html?type=' + encodeURIComponent(type);
   $('#vendor-back-link').href = backHref;
@@ -153,7 +154,7 @@
   }
   try {
     const data=await loadData();const items=vendorsFor(data,type);
-    const vendor=requestedName?items.find(v=>v.slug?.toLocaleLowerCase('pt-BR')===requestedName || v.name.trim().toLocaleLowerCase('pt-BR')===requestedName):items[0];
+    const vendor=requestedName?items.find(v=>v.slug?.toLocaleLowerCase('pt-BR')===requestedName || v.name.trim().toLocaleLowerCase('pt-BR')===requestedName || (Array.isArray(v.aliases) && v.aliases.some(alias => alias.toLocaleLowerCase('pt-BR') === requestedName))):items[0];
     if (!vendor) {displayError('Verifique o link ou selecione outro fabricante.');return;}
     renderVendor(vendor,items);
   } catch(error) {
