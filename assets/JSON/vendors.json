@@ -1,61 +1,6 @@
 {
   "security": [
     {
-      "name": "A10",
-      "slug": "a10",
-      "logo": "assets/IMG/logos/a10-typographic.svg",
-      "summary": "Proteção de aplicações e redes com mitigação de DDoS, WAF e entrega de aplicações de alta performance.",
-      "tags": [
-        "DDoS",
-        "WAF",
-        "ADC",
-        "Load Balancing",
-        "Application Security",
-        "Network Security",
-        "TLS/SSL"
-      ],
-      "description": "Proteção de aplicações e redes com mitigação de DDoS, WAF e entrega de aplicações de alta performance.",
-      "tagline": "",
-      "heroSubtitle": "Proteção de aplicações e redes com mitigação de DDoS, WAF e entrega de aplicações de alta performance.",
-      "link": "vendor.html?type=security&name=a10",
-      "heroImage": "",
-      "products": [
-        {
-          "title": "A10 Defend DDoS Mitigator",
-          "description": "Mitigação automatizada de ataques de negação de serviço distribuída.",
-          "logo": ""
-        },
-        {
-          "title": "A10 Defend Next-Gen WAF",
-          "description": "Proteção de aplicações web com funcionalidades integradas à entrega de aplicações.",
-          "logo": ""
-        },
-        {
-          "title": "Thunder ADC",
-          "description": "Controlador de entrega de aplicações e balanceamento de carga de alto desempenho.",
-          "logo": ""
-        },
-        {
-          "title": "A10 Defend DDoS Detector",
-          "description": "Detecção de anomalias e ataques de DDoS em redes.",
-          "logo": ""
-        }
-      ],
-      "productSectionTitle": "Principais Produtos",
-      "productSectionSubtitle": "",
-      "productSectionNote": "",
-      "productMedia": "",
-      "competitors": [],
-      "profile": {
-        "segments": [],
-        "sizes": [],
-        "roles": []
-      },
-      "contacts": [],
-      "sourceUrl": "https://www.a10networks.com/products/",
-      "dataStatus": "Informações de portfólio de produto verificadas em fonte oficial; contatos, concorrentes e perfil não cadastrados."
-    },
-    {
       "name": "Checkmarx",
       "slug": "checkmarx",
       "logo": "assets/IMG/logos/checkmarx.png",
